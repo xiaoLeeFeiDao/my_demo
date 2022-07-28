@@ -2375,6 +2375,9 @@
             <name>$PROJ_DIR$\cpp_learn\44_菱形继承与虚继承.cpp</name>
         </file>
         <file>
+            <name>$PROJ_DIR$\cpp_learn\45_虚继承内部原理.cpp</name>
+        </file>
+        <file>
             <name>$PROJ_DIR$\cpp_learn\cpp_learn.cpp</name>
         </file>
         <file>

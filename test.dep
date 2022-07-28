@@ -1,216 +1,139 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
     <fileVersion>2</fileVersion>
-    <fileChecksum>1891705037</fileChecksum>
+    <fileChecksum>2030197056</fileChecksum>
     <configuration>
         <name>Debug</name>
         <outputs>
-            <file>$PROJ_DIR$\Debug\Obj\demo_test01.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xstring</file>
+            <file>$PROJ_DIR$\Debug\Obj\demo_test01.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
+            <file>$PROJ_DIR$\main.cpp</file>
+            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstddef</file>
+            <file>$PROJ_DIR$\cpp_learn\cpp_learn.cpp</file>
+            <file>$PROJ_DIR$\demo\demo.cpp</file>
+            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
+            <file>$PROJ_DIR$\cpp_learn\cpp_learn.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstring</file>
+            <file>$PROJ_DIR$\demo\demo_test01.cpp</file>
+            <file>$PROJ_DIR$\Debug\Obj\44_菱形继承与虚继承.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
+            <file>$TOOLKIT_DIR$\config\generic_cortex.icf</file>
+            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\ios</file>
+            <file>$PROJ_DIR$\cpp_learn\45_虚继承内部原理.cpp</file>
             <file>$TOOLKIT_DIR$\inc\c\limits.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+            <file>$PROJ_DIR$\main.h</file>
             <file>$TOOLKIT_DIR$\inc\c\xctype.h</file>
             <file>$TOOLKIT_DIR$\inc\c\stdint.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xmemory0</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\istream</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cwchar</file>
-            <file>$TOOLKIT_DIR$\inc\c\xtgmath.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstdint</file>
-            <file>$PROJ_DIR$\Debug\List\test.map</file>
-            <file>$PROJ_DIR$\Debug\Obj\44_菱形继承与虚继承.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\ctype.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\climits</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstring</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Defaults.h</file>
-            <file>$PROJ_DIR$\demo\demo.h</file>
-            <file>$TOOLKIT_DIR$\lib\m7M_tl.a</file>
-            <file>$TOOLKIT_DIR$\lib\dlpp7M_tl_nc.a</file>
-            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\stdexcept</file>
-            <file>$PROJ_DIR$\Debug\Obj\demo.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\c\stddef.h</file>
-            <file>$TOOLKIT_DIR$\config\generic_cortex.icf</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cctype</file>
-            <file>$PROJ_DIR$\Debug\Obj\test.pbd</file>
-            <file>$PROJ_DIR$\Debug\Obj\demo_test01.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\demo_test01.o</file>
             <file>$PROJ_DIR$\Debug\Obj\main.o</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstddef</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xlocinfo</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\system_error</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\initializer_list</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xlocale</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xxexception</file>
             <file>$PROJ_DIR$\cpp_learn\44_菱形继承与虚继承.cpp</file>
-            <file>$PROJ_DIR$\Debug\Obj\demo.o</file>
-            <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\xatomic.h</file>
-            <file>$PROJ_DIR$\demo\demo.cpp</file>
-            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
-            <file>$PROJ_DIR$\main.cpp</file>
-            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\time32.h</file>
-            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
-            <file>$PROJ_DIR$\demo\demo_inner.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\exception</file>
-            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\c\float.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\clocale</file>
-            <file>$PROJ_DIR$\demo\demo_test01.cpp</file>
             <file>$PROJ_DIR$\cpp_learn\cpp_learn_iner.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstdio</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cwchar</file>
+            <file>$TOOLKIT_DIR$\lib\dlpp7M_tl_nc.a</file>
             <file>$TOOLKIT_DIR$\inc\cpp\cwctype</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\ostream</file>
+            <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\streambuf</file>
+            <file>$TOOLKIT_DIR$\inc\c\wchar.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\climits</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\istream</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\clocale</file>
+            <file>$TOOLKIT_DIR$\inc\c\float.h</file>
             <file>$TOOLKIT_DIR$\inc\cpp\cmath</file>
+            <file>$TOOLKIT_DIR$\inc\c\math.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\demo.o</file>
             <file>$TOOLKIT_DIR$\inc\c\errno.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xtr1common</file>
+            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
+            <file>$PROJ_DIR$\Debug\Obj\cpp_learn.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\typeinfo</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xstddef</file>
+            <file>$PROJ_DIR$\Debug\Obj\cpp_learn.pbi</file>
+            <file>$PROJ_DIR$\Debug\Obj\demo_test01.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\iosfwd</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\limits</file>
+            <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\ctime</file>
+            <file>$PROJ_DIR$\Debug\Obj\44_菱形继承与虚继承.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\demo.__cstat.et</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocinfo</file>
+            <file>$PROJ_DIR$\Debug\Obj\demo.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\new</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xmemory0</file>
+            <file>$TOOLKIT_DIR$\inc\c\time.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\type_traits</file>
+            <file>$TOOLKIT_DIR$\inc\c\xatomic.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cfloat</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xutility</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\iostream</file>
+            <file>$TOOLKIT_DIR$\lib\dl7M_tln.a</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
+            <file>$TOOLKIT_DIR$\lib\rt7M_tl.a</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\exception</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\wctype.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocnum</file>
             <file>$TOOLKIT_DIR$\inc\cpp\utility</file>
             <file>$TOOLKIT_DIR$\inc\cpp\cerrno</file>
-            <file>$PROJ_DIR$\cpp_learn\cpp_learn.h</file>
-            <file>$PROJ_DIR$\cpp_learn\cpp_learn.cpp</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\ctime</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_string.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Config_Normal.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cstdlib</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xiosbase</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\type_traits</file>
-            <file>$TOOLKIT_DIR$\inc\c\stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xutility</file>
-            <file>$TOOLKIT_DIR$\inc\c\xlocale_lconv.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\wctype.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\new</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\ios</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xstddef</file>
-            <file>$TOOLKIT_DIR$\lib\shb_l.a</file>
-            <file>$PROJ_DIR$\Debug\Obj\44_菱形继承与虚继承.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xtr1common</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\ostream</file>
-            <file>$TOOLKIT_DIR$\inc\c\ysizet.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_float_setup.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\iostream</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\typeinfo</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\streambuf</file>
-            <file>$TOOLKIT_DIR$\inc\c\DLib_Product.h</file>
-            <file>$TOOLKIT_DIR$\inc\c\string.h</file>
             <file>$PROJ_DIR$\Debug\Obj\cpp_learn.o</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\cfloat</file>
-            <file>$PROJ_DIR$\Debug\Obj\cpp_learn.__cstat.et</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\iosfwd</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdio</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xlocale</file>
+            <file>$TOOLKIT_DIR$\inc\c\ycheck.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\system_error</file>
+            <file>$PROJ_DIR$\demo\demo_inner.h</file>
             <file>$PROJ_DIR$\Debug\Exe\test.out</file>
-            <file>$PROJ_DIR$\Debug\Obj\cpp_learn.pbi</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\limits</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xlocnum</file>
-            <file>$TOOLKIT_DIR$\inc\c\locale.h</file>
-            <file>$TOOLKIT_DIR$\inc\cpp\xstring</file>
-            <file>$PROJ_DIR$\main.h</file>
-            <file>$PROJ_DIR$\Debug\Obj\44_菱形继承与虚继承.__cstat.et</file>
+            <file>$PROJ_DIR$\Debug\Obj\main.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\c\DLib_Product_stdlib.h</file>
+            <file>$TOOLKIT_DIR$\inc\c\time32.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\initializer_list</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdlib</file>
+            <file>$PROJ_DIR$\Debug\Obj\44_菱形继承与虚继承.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xiosbase</file>
+            <file>$TOOLKIT_DIR$\inc\c\yvals.h</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cctype</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\cstdint</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\xxexception</file>
+            <file>$PROJ_DIR$\Debug\Obj\45_虚继承内部原理.pbi</file>
+            <file>$TOOLKIT_DIR$\inc\cpp\stdexcept</file>
+            <file>$PROJ_DIR$\Debug\List\test.map</file>
+            <file>$PROJ_DIR$\demo\demo.h</file>
+            <file>$PROJ_DIR$\Debug\Obj\test.pbd</file>
+            <file>$PROJ_DIR$\Debug\Obj\45_虚继承内部原理.o</file>
+            <file>$TOOLKIT_DIR$\inc\c\stdio.h</file>
         </outputs>
-        <file>
-            <name>[ROOT_NODE]</name>
-            <outputs>
-                <tool>
-                    <name>ILINK</name>
-                    <file> 91 11</file>
-                </tool>
-            </outputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\cpp_learn\44_菱形继承与虚继承.cpp</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 12</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 76</file>
-                </tool>
-                <tool>
-                    <name>__cstat</name>
-                    <file> 98</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 60 82 7 78 73 94 14 2 43 20 16 64 85 56 47 80 9 77 65 68 79 81 84 66 34 15 86 63 51 95 4 70 55 71 22 48 74 30 24 33 35 67 96 6 10 5 93 88 50 8 38 72 69 58 90 54 1 39 83 31 26 13 62 3 44 32 59 57 53</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 79 85 20 74 65 84 16 15 48 72 47 9 77 43 34 22 70 35 39 14 82 78 94 56 64 80 81 66 31 4 33 24 30 5 54 8 44 53 7 73 2 68 32 51 55 83 86 38 58 90 26 62 13 60 63 95 71 96 67 6 10 93 69 88 50 1 3 59 57</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\demo\demo.cpp</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 37</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 23</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 46 17</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 46 17</file>
-                </tool>
-            </inputs>
-        </file>
         <file>
             <name>$PROJ_DIR$\main.cpp</name>
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 29</file>
+                    <file> 25</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 49</file>
+                    <file> 86</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 21</file>
+                    <file> 17</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 97 60 82 7 78 73 94 14 2 43 20 16 64 85 56 47 80 9 77 65 68 79 81 84 66 34 15 86 63 51 95 4 70 55 71 22 48 74 30 24 33 35 67 96 6 10 5 93 88 50 8 38 72 69 58 90 54 1 39 83 31 26 13 62 3 44 32 59 57 53 17</file>
+                    <file> 21 10 100 69 36 31 18 76 35 20 82 93 5 71 2 39 40 51 14 43 90 68 57 87 33 92 81 11 52 74 37 54 22 32 30 75 98 73 47 6 9 89 96 64 0 62 95 23 53 66 38 28 34 61 67 77 50 80 103 65 46 59 94 16 55 63 88 83 78 42</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 7 63 33 30 82 84 20 15 43 24 72 39 14 26 73 68 34 22 74 35 4 56 2 65 31 79 95 71 96 5 62 13 78 94 16 64 85 47 80 9 77 81 66 32 51 55 83 86 70 48 67 6 10 93 69 38 58 54 8 44 57 97 88 50 90 1 3 59</file>
-                </tool>
-            </inputs>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\demo\demo_test01.cpp</name>
-            <outputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 0</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 28</file>
-                </tool>
-            </outputs>
-            <inputs>
-                <tool>
-                    <name>ICCARM</name>
-                    <file> 54 1 43 20 16 64 85 79 46 68 81 15 86 63</file>
-                </tool>
-                <tool>
-                    <name>BICOMP</name>
-                    <file> 16 85 20 43 79 81 68 1 64 46 15 86 54 63</file>
+                    <file> 63 92 82 66 51 87 69 36 35 59 93 90 18 71 74 64 11 0 98 10 5 2 40 14 43 57 81 54 75 61 28 47 100 31 76 39 33 20 68 83 37 30 46 22 52 32 73 96 6 89 9 38 103 78 42 21 62 95 53 67 65 23 34 77 50 80 94 55 16 88</file>
                 </tool>
             </inputs>
         </file>
@@ -219,40 +142,153 @@
             <outputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 87</file>
+                    <file> 79</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 92</file>
+                    <file> 48</file>
                 </tool>
                 <tool>
                     <name>__cstat</name>
-                    <file> 89</file>
+                    <file> 45</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ICCARM</name>
-                    <file> 60 82 7 78 73 94 14 2 43 20 16 64 85 56 47 80 9 77 65 68 79 81 84 66 34 15 86 63 51 95 4 70 55 71 22 48 74 30 24 33 35 67 96 6 10 5 93 88 50 8 38 72 69 58 90 54 1 39 83 31 26 13 62 3 44 32 59 57 53</file>
+                    <file> 10 27 69 36 31 18 76 35 20 82 93 5 71 2 39 40 51 14 43 90 68 57 87 33 92 81 11 52 74 37 54 22 32 30 75 98 73 47 6 9 89 96 64 0 62 95 23 53 66 38 28 34 61 67 77 50 80 103 65 46 59 94 16 55 63 88 83 78 42</file>
                 </tool>
                 <tool>
                     <name>BICOMP</name>
-                    <file> 24 43 93 79 20 14 65 56 4 33 30 6 2 68 55 70 48 74 35 39 82 78 94 84 32 51 83 86 5 54 8 44 53 7 73 16 64 85 47 80 9 77 81 66 34 15 22 31 63 95 71 96 67 10 69 38 58 90 26 62 13 60 72 88 50 1 3 59 57</file>
+                    <file> 63 82 90 93 66 20 73 68 47 30 32 96 39 35 22 89 9 6 11 0 98 31 76 33 83 37 46 52 61 28 27 69 36 18 5 71 2 40 51 14 43 57 87 92 81 59 74 54 75 64 38 103 78 42 10 62 95 53 67 65 23 34 77 50 80 94 55 16 88</file>
                 </tool>
             </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\demo\demo.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 41</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 60</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 58</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 84 100</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 84 100</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\demo\demo_test01.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 24</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 1</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 49</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 80 103 82 93 5 71 2 57 84 68 87 11 52 74</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 5 2 93 82 57 87 68 103 71 84 11 52 80 74</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cpp_learn\45_虚继承内部原理.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 102</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 97</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27 69 36 31 18 76 35 20 82 93 5 71 2 39 40 51 14 43 90 68 57 87 33 92 81 11 52 74 37 54 22 32 30 75 98 73 47 6 9 89 96 64 0 62 95 23 53 66 38 28 34 61 67 77 50 80 103 65 46 59 94 16 55 63 88 83 78 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63 43 66 30 82 93 95 35 20 90 68 22 57 54 11 0 98 69 36 18 83 37 46 75 62 67 28 47 31 76 39 33 5 71 2 40 51 14 87 92 81 59 74 64 53 38 73 103 78 42 27 52 32 96 6 89 9 61 65 23 34 77 50 80 94 55 16 88</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cpp_learn\44_菱形继承与虚继承.cpp</name>
+            <outputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 13</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 91</file>
+                </tool>
+                <tool>
+                    <name>__cstat</name>
+                    <file> 56</file>
+                </tool>
+            </outputs>
+            <inputs>
+                <tool>
+                    <name>ICCARM</name>
+                    <file> 27 69 36 31 18 76 35 20 82 93 5 71 2 39 40 51 14 43 90 68 57 87 33 92 81 11 52 74 37 54 22 32 30 75 98 73 47 6 9 89 96 64 0 62 95 23 53 66 38 28 34 61 67 77 50 80 103 65 46 59 94 16 55 63 88 83 78 42</file>
+                </tool>
+                <tool>
+                    <name>BICOMP</name>
+                    <file> 63 43 66 82 37 95 35 93 83 46 57 54 11 0 98 69 36 18 90 20 68 30 22 75 62 67 28 47 31 76 39 33 5 71 2 40 51 14 87 92 81 59 74 64 53 38 73 103 78 42 27 52 32 96 6 89 9 61 65 23 34 77 50 80 94 55 16 88</file>
+                </tool>
+            </inputs>
+        </file>
+        <file>
+            <name>[ROOT_NODE]</name>
+            <outputs>
+                <tool>
+                    <name>ILINK</name>
+                    <file> 85 99</file>
+                </tool>
+            </outputs>
         </file>
         <file>
             <name>$PROJ_DIR$\Debug\Exe\test.out</name>
             <outputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 11</file>
+                    <file> 99</file>
                 </tool>
             </outputs>
             <inputs>
                 <tool>
                     <name>ILINK</name>
-                    <file> 25 12 87 37 0 29 75 45 19 18 41</file>
+                    <file> 15 13 102 79 41 24 25 44 72 29 4 70</file>
                 </tool>
             </inputs>
         </file>

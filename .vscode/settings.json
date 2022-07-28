@@ -1,18 +1,56 @@
 {
     "files.associations": {
-        "cstdio": "cpp"
+        "cstdio": "cpp",
+        "ostream": "cpp",
+        "type_traits": "cpp",
+        "atomic": "cpp",
+        "cstdint": "cpp"
     },
     "highlightwords.colors": [
-        { "light": "#b3d9ff", "dark": "cyan" },
-        { "light": "#e6ffb3", "dark": "pink" },
-        { "light": "#b3b3ff", "dark": "lightgreen" },
-        { "light": "#ffd9b3", "dark": "magenta" },
-        { "light": "#ffb3ff", "dark": "cornflowerblue" },
-        { "light": "#b3ffb3", "dark": "orange" },
-        { "light": "#ffff80", "dark": "green" },
-        { "light": "#d1e0e0", "dark": "red" }
-    ],"highlightwords.box": {
+        {
+            "light": "#b3d9ff",
+            "dark": "cyan"
+        },
+        {
+            "light": "#e6ffb3",
+            "dark": "pink"
+        },
+        {
+            "light": "#b3b3ff",
+            "dark": "lightgreen"
+        },
+        {
+            "light": "#ffd9b3",
+            "dark": "magenta"
+        },
+        {
+            "light": "#ffb3ff",
+            "dark": "cornflowerblue"
+        },
+        {
+            "light": "#b3ffb3",
+            "dark": "orange"
+        },
+        {
+            "light": "#ffff80",
+            "dark": "green"
+        },
+        {
+            "light": "#d1e0e0",
+            "dark": "red"
+        }
+    ],
+    "highlightwords.box": {
         "light": false,
         "dark": true
-    }
+    },
+    "C_Cpp.clang_format_path": "Microsoft",
+    "C_Cpp.clang_format_style": "Visual Studio",
+    "C_Cpp.vcFormat.indent.accessSpecifiers": true,
+    "C_Cpp.vcFormat.indent.braces": true,
+    "C_Cpp.vcFormat.indent.caseContentsWhenBlock": true,
+    "C_Cpp.vcFormat.indent.caseLabels": true,
+    "C_Cpp.vcFormat.indent.preserveComments": true,
+    "C_Cpp.vcFormat.indent.preserveWithinParentheses": false,
+    "C_Cpp.errorSquiggles": "Disabled"
 }

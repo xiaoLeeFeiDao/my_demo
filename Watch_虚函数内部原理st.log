@@ -1,0 +1,21 @@
+Expression	Value	Location	Type	
+st	<class>	0x20000868	class SheepTuo	
+	<struct>	0x20000868	struct Sheep as subobject	
+__vptr	0x00004A0C	0x20000868	void (* const *)()	
+	0x00000004	0x00004A0C	void (*)()	
+	0x00000004	0x00000004	void ()	
+	<struct>	0x2000086C	struct Tuo as subobject	
+__vptr	0x00004A18	0x2000086C	void (* const *)()	
+	0x0004B510	0x00004A18	void (*)()	
+	0x0004B510	0x0004B510	void ()	
+	<class>	0x20000870	class animal	
+m_Age	100	0x20000870	int	
+&st	0x20000868		class SheepTuo __data *	
+*(SheepTuo*)0x20000868	<class>	0x20000868	class SheepTuo	
+	<struct>	0x20000868	struct Sheep as subobject	
+__vptr	0x00004A0C	0x20000868	void (* const *)()	
+	<struct>	0x2000086C	struct Tuo as subobject	
+__vptr	0x00004A18	0x2000086C	void (* const *)()	
+	<class>	0x20000870	class animal	
+m_Age	100	0x20000870	int	
+0x00004A0C	18956		int	

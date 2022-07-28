@@ -346,6 +346,9 @@
                     <name>CCIncludePath2</name>
                     <state>\\wsl.localhost\Ubuntu-20.04\home\stone\code\test\cpp_learn</state>
                     <state>\\wsl.localhost\Ubuntu-20.04\home\stone\code\test\demo</state>
+                    <state>D:\code\test\cpp_learn</state>
+                    <state>D:\code\test</state>
+                    <state>D:\code\test\demo</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2042,6 +2045,9 @@
         <name>cpp_case</name>
         <file>
             <name>$PROJ_DIR$\cpp_learn\44_菱形继承与虚继承.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\cpp_learn\45_虚继承内部原理.cpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\cpp_learn\cpp_learn.cpp</name>
