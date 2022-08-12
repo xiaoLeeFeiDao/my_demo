@@ -1,0 +1,19 @@
+"--endian=little" 
+
+"--cpu=Cortex-M7" 
+
+"--fpu=VFPv5_D16" 
+
+"-p" 
+
+"C:\Program Files (x86)\IAR Systems\Embedded Workbench 8.0\arm\CONFIG\debugger\ARM\MPS2FVP.ddf" 
+
+"--semihosting" 
+
+"--device=MPS2 FVP Cortex-M7" 
+
+"--multicore_nr_of_cores=1" 
+
+
+
+

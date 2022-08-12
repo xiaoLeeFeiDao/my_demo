@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "make debug -j12 TILES=y",
+            "command": "make",
+            "args": [
+                "debug",
+                "-j12",
+                "TILES=y"
+            ],
+            "options": {
+                "cwd": "crawl-ref/source"
+            },
+            "problemMatcher": {
+                "base": "$gcc",
+                "fileLocation": ["relative", "${workspaceRoot}/crawl-ref/source"]
+            },
+            "group": "build"
+        }
+    ]
+}

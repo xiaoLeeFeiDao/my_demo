@@ -1,7 +1,7 @@
 #include "cpp_learn.h"
-#include "cpp_learn_iner.h"
+#include "cpp_learn_inner.h"
 
 void CppLearn()
 {
-  test45();
+  Test45();
 }

@@ -1,16 +1,37 @@
 {
-    // 使用 IntelliSense 了解相关属性。 
-    // 悬停以查看现有属性的描述。
-    // 欲了解更多信息，请访问: https://go.microsoft.com/fwlink/?linkid=830387
     "version": "0.2.0",
     "configurations": [
+        // ...其他配置
         {
-            "type": "lldb",
+            "name": "(gdb) Windows 上的 Bash 启动",
+            "type": "cppdbg",
             "request": "launch",
-            "name": "Debug",
-            "program": "${workspaceFolder}/Debug/Exe/test.out",
+            "program": "${workspaceRoot}/crawl-ref/source/crawl.exe",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "stopAtEntry": false,
+            "cwd": "${workspaceRoot}/crawl-ref/source/",
+            "environment": [],
+            "externalConsole": false,
+            "pipeTransport": {
+                "debuggerPath": "/usr/bin/gdb",
+                "pipeProgram": "C:\\msys64\\usr\\bin\\bash.exe",
+                "pipeArgs": [
+                    "-c"
+                ],
+                "pipeCwd": ""
+            },
+            "sourceFileMap": {
+                "/d/code/test": "${workspaceRoot}"
+            },
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            // 如果要先编译再调试, 加入:  
+            // "preLaunchTask": "make debug -j12 TILES=y"
         }
     ]
 }
