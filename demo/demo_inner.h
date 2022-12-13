@@ -5,6 +5,8 @@
 extern "C" {
 #endif
 void DemoTest01();
+void DemoTest02();
+void DemoTest03();
 
 
 #ifdef __cplusplus

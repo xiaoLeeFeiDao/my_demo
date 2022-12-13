@@ -1,37 +1,37 @@
 {
     "version": "0.2.0",
     "configurations": [
-        // ...其他配置
+        
         {
-            "name": "(gdb) Windows 上的 Bash 启动",
+            "name": "Cygwin gdb",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceRoot}/crawl-ref/source/crawl.exe",
+            "program": "test.exe",
             "args": [],
             "stopAtEntry": false,
-            "cwd": "${workspaceRoot}/crawl-ref/source/",
+            // "cwd": "${workspaceFolder}/bin",
+            "cwd": "${workspaceFolder}",
             "environment": [],
             "externalConsole": false,
             "pipeTransport": {
-                "debuggerPath": "/usr/bin/gdb",
-                "pipeProgram": "C:\\msys64\\usr\\bin\\bash.exe",
-                "pipeArgs": [
-                    "-c"
-                ],
+                "debuggerPath": "gdb",
+                // "pipeProgram": "C:\\cygwin64\\bin\\bash.exe",
+                "pipeProgram": "C:\\cygwin64\\bin\\bash.exe",
+                "pipeArgs": ["-c"],
                 "pipeCwd": ""
-            },
-            "sourceFileMap": {
-                "/d/code/test": "${workspaceRoot}"
             },
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
+                },
+                {
+                    "description":  "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
                 }
-            ],
-            // 如果要先编译再调试, 加入:  
-            // "preLaunchTask": "make debug -j12 TILES=y"
+            ]
         }
     ]
 }

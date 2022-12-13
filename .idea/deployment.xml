@@ -2,7 +2,21 @@
 <project version="4">
   <component name="PublishConfigData" remoteFilesAllowedToDisappearOnAutoupload="false">
     <serverData>
+      <paths name="WSL (5fc8d147-cac9-4d9c-b8da-5f37b1000571)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
       <paths name="WSL (e6f5a0ff-75ca-4520-88e4-9f6ded137c5a)">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="stone (e38a2524-b34d-499a-bd55-11ac5652f944)">
         <serverdata>
           <mappings>
             <mapping local="$PROJECT_DIR$" web="/" />

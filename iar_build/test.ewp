@@ -340,11 +340,9 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>D:\code\test\cpp_learn\include</state>
-                    <state>D:\code\test\cpp_learn</state>
-                    <state>D:\code\test\demo\include</state>
-                    <state>D:\code\test\demo</state>
-                    <state>D:\code\test</state>
+                    <state>D:\code\test_win11\cpp_learn\include</state>
+                    <state>D:\code\test_win11\demo\include</state>
+                    <state>D:\code\test_win11</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2219,6 +2217,9 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\demo\demo_test01.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\demo\demo_test02.cpp</name>
         </file>
     </group>
     <file>

@@ -4,45 +4,9 @@
         "ostream": "cpp",
         "type_traits": "cpp",
         "atomic": "cpp",
-        "cstdint": "cpp"
-    },
-    "highlightwords.colors": [
-        {
-            "light": "#b3d9ff",
-            "dark": "cyan"
-        },
-        {
-            "light": "#e6ffb3",
-            "dark": "pink"
-        },
-        {
-            "light": "#b3b3ff",
-            "dark": "lightgreen"
-        },
-        {
-            "light": "#ffd9b3",
-            "dark": "magenta"
-        },
-        {
-            "light": "#ffb3ff",
-            "dark": "cornflowerblue"
-        },
-        {
-            "light": "#b3ffb3",
-            "dark": "orange"
-        },
-        {
-            "light": "#ffff80",
-            "dark": "green"
-        },
-        {
-            "light": "#d1e0e0",
-            "dark": "red"
-        }
-    ],
-    "highlightwords.box": {
-        "light": false,
-        "dark": true
+        "cstdint": "cpp",
+        "cstring": "cpp",
+        "iostream": "cpp"
     },
     "C_Cpp.clang_format_path": "Microsoft",
     "C_Cpp.clang_format_style": "Visual Studio",
@@ -52,12 +16,67 @@
     "C_Cpp.vcFormat.indent.caseLabels": true,
     "C_Cpp.vcFormat.indent.preserveComments": true,
     "C_Cpp.vcFormat.indent.preserveWithinParentheses": false,
-    "C_Cpp.errorSquiggles": "Disabled",
-    "files.encoding": "utf8bom",
-    "cmake.cmakePath": "C:\\msys64\\usr\\bin\\cmake.exe",
-    "terminal.integrated.env.windows": {
-        "CHERE_INVOKING": "1",
-        "MSYSTEM": "MINGW64",
+    // "C_Cpp.default.compilerPath": "C:\\cygwin64\bin\\g++.exe",
+    // "C_Cpp.default.compilerPath": "C:\\SysGCC\\arm-eabi\\bin\\g++.exe",
+    "debug.allowBreakpointsEverywhere": true,
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    "terminal.integrated.profiles.windows": {
+        "cygwin": {
+            "path": "C:\\cygwin64\\bin\\bash.exe",
+            "env": {
+                // "HOME": "${workspaceFolder}", // 错误：不支持win风格路径
+                "CHERE_INVOKING": "1" // cygwin默认执行/etc/profile以检查环境变量CHERE_INVOKING，如果设置，则禁止更改目录到$HOME。
+            },
+            "icon": "terminal-bash",
+            "args": [
+                "--login",
+            ]
+        },
+        "win_cmd": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "GitBash": {
+            "source": "Git Bash"
+        }
     },
-    "C_Cpp.default.compilerPath": "C:\\msys64\\usr\\bin\\g++.exe",
+    // "terminal.integrated.defaultProfile.windows": "cygwin",
+    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // "terminal.integrated.defaultProfile.windows": "PowerShell",
+    // "files.encoding": "utf8",
+    "files.encoding": "gb2312",
+    // "window.zoomLevel": 0.0, // 调整窗口的缩放级别
+    "window.zoomLevel": 0.5,
+    // --------------- cmake config ------------------------------------------
+    "cmake.sourceDirectory": "d:/code/test_win11",
+    // "cmake.sourceDirectory": "${workspaceFolder}/.",
+    // "cmake.cacheInit": "build", // 
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.outputLogEncoding": "UTF-8",
+    // "cmake.outputLogEncoding": "GBK",
+    // "cmake.configureArgs": [],
+    // "cmake.cmakePath": "/usr/bin/cmake",
+    // "cmake.cmakePath": "C:\\Program Files\\CMake\\bin\\cmake.exe",
+    // "cmake.cmakePath": "C:\\Program Files\\CMake\\bin\\cmake.exe",
+    // "cmake.mingwSearchDirs": [],
+    // "cmake.buildDirectory": "build",
+    // "cmake.sourceDirectory": "/cygdrive/d/code/test_win11",
+    // "cmake.sourceDirectory": "D:/code/test_win11",
+    // "cmake.outputLogEncoding": "gbk",
+    // "cmake.buildTask": false, // 设置为true表示将从tasks.json进行build，编译过程在终端展示而不是输出中展示
+    // "cmake.configureOnOpen": true,
+    "cmake.platform": "Unix Makefiles",
+    // "cmake.generator": "MinGW Makefiles",
+    // "cmake.generator": "Unix Makefiles",
+    // "cmake.cacheInit": "d:/code/test_win11/build"
+    // "cmake.cacheInit": "/cygdrive/d/code/test_win11/build",
+    // "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.configureOnOpen": true,
 }

@@ -34,10 +34,12 @@ Tag为32的信元长度为1(01 00,小端序表示为1);
 #include <stdlib.h>
 #include <cstring>
 #define CODE_STREAM_LENGTH 8
+int g_test = 3;
 void DemoTest01()
 {
     char tagBuf = 0x00;
     char tmpBuf = 0x00;
+    g_test = 5;
     char *codeStream = (char*)malloc(CODE_STREAM_LENGTH);
     int i = 0;
     if (codeStream == NULL) {
@@ -52,7 +54,7 @@ void DemoTest01()
     char c_tmp;
     while ((c_tmp = getchar() != '\n') && c_tmp != EOF);
     */
-    
+
     scanf("%c", &tagBuf);
     getchar();
 
@@ -63,9 +65,9 @@ void DemoTest01()
         i++;
         if (i >= CODE_STREAM_LENGTH -2) {
             break;
-        } 
+        }
         scanf("%c", &tmpBuf);
-        
+
     }
     return;
 }
