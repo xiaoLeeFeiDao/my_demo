@@ -2,41 +2,36 @@
  * @Author: stone8419 XiaoLeeFeiDao@yandex.com
  * @Date: 2023-04-02 10:44:33
  * @LastEditors: stone8419 XiaoLeeFeiDao@yandex.com
- * @LastEditTime: 2023-04-02 10:45:08
+ * @LastEditTime: 2023-04-02 10:47:49
  * @FilePath: /test_win11/demo/demo_test01.cpp
  * @Description: 
  * Copyright (c) 2023 by ${git_name} email: ${git_email}, All Rights Reserved.
  */
-/* TLVè§£æž
-1.é¢˜ç›®æè¿°
-TLV ç¼–ç æ˜?æŒ? [ Tag Length Value ] æ ¼å¼è¿›è?Œç¼–ç çš„,ä¸€æ®µç æµä¸­çš„ä¿¡å…ƒç”¨Tagæ ‡è¯†, Tagåœ¨ç æµä¸­å”?ä¸€ä¸é‡å¤? ,Lengthè¡¨ç¤ºä¿¡å…ƒValueçš„é•¿åº?,Valueè¡¨ç¤ºä¿¡å…ƒçš„å€?.
-ç æµä»¥æŸä¿¡å…ƒçš„Tagå¼€å¤?,Tagå›ºå®šå? ä¸€ä¸?å­—èŠ‚,Lengthå›ºå®šå ä¸¤ä¸?å­—èŠ‚,å­—èŠ‚åºä¸º å°ç??åº? .
-çŽ°ç»™å®šTLVæ ¼å¼ç¼–ç çš„ç æµ?,ä»¥åŠéœ€è¦è§£ç çš„ä¿¡å…ƒTag,è¯·è¾“å‡ºè?¥ä¿¡å…ƒçš„Value.
-è¾“å…¥ç æµçš?16è¿›åˆ¶å­—ç?¦ä¸­,ä¸åŒ…æ‹?å°å†™å­—æ¯,ä¸”è?æ±‚è¾“å‡ºçš?16è¿›åˆ¶å­—ç?¦ä¸²ä¸?ä¹Ÿä¸è¦åŒ…å?å°å†™å­—æ¯;
-ç æµå­—ç?¦ä¸²çš„æœ€å¤§é•¿åº¦ä¸è¶…è¿‡50000ä¸?å­—èŠ‚.
-
-2.è¾“å…¥è¾“å‡ºæè¿°
-è¾“å…¥æè¿°ï¼?
-è¾“å…¥çš„ç??ä¸€è¡Œä¸ºä¸€ä¸?å­—ç?¦ä¸²,è¡¨ç¤ºå¾…è§£ç ä¿¡å…ƒçš„ Tag ;
-è¾“å…¥çš„ç??äºŒè?Œä¸ºä¸€ä¸?å­—ç?¦ä¸²,è¡¨ç¤ºå¾…è§£ç çš„ 16è¿›åˆ¶ç æµ ,å­—èŠ‚ä¹‹é—´ç”¨ç©ºæ ¼åˆ†éš? .
-
-è¾“å‡ºæè¿°:
-è¾“å‡ºä¸€ä¸?å­—ç?¦ä¸²,è¡¨ç¤ºå¾…è§£ç ä¿¡å…ƒä»¥16è¿›åˆ¶è¡¨ç¤ºçš? Value .
-
-3.ç¤ºä¾‹
-è¾“å…¥ï¼?
+/* TLV½âÎö
+1.ÌâÄ¿ÃèÊö
+TLV ±àÂëÊÇ°´ [ Tag Length Value ] ¸ñÊ½½øÐÐ±àÂëµÄ,Ò»¶ÎÂëÁ÷ÖÐµÄÐÅÔªÓÃTag±êÊ¶, TagÔÚÂëÁ÷ÖÐÎ¨Ò»²»ÖØ¸´ ,Length±íÊ¾ÐÅÔªValueµÄ³¤¶È,Value±íÊ¾ÐÅÔªµÄÖµ.
+ÂëÁ÷ÒÔÄ³ÐÅÔªµÄTag¿ªÍ·,Tag¹Ì¶¨Õ¼ Ò»¸ö×Ö½Ú,Length¹Ì¶¨Õ¼Á½¸ö×Ö½Ú,×Ö½ÚÐòÎª Ð¡¶ËÐò .
+ÏÖ¸ø¶¨TLV¸ñÊ½±àÂëµÄÂëÁ÷,ÒÔ¼°ÐèÒª½âÂëµÄÐÅÔªTag,ÇëÊä³ö¸ÃÐÅÔªµÄValue.
+ÊäÈëÂëÁ÷µÄ16½øÖÆ×Ö·ûÖÐ,²»°üÀ¨Ð¡Ð´×ÖÄ¸,ÇÒÒªÇóÊä³öµÄ16½øÖÆ×Ö·û´®ÖÐÒ²²»Òª°üº¬Ð¡Ð´×ÖÄ¸;
+ÂëÁ÷×Ö·û´®µÄ×î´ó³¤¶È²»³¬¹ý50000¸ö×Ö½Ú.
+2.ÊäÈëÊä³öÃèÊö
+ÊäÈëÃèÊö£º
+ÊäÈëµÄµÚÒ»ÐÐÎªÒ»¸ö×Ö·û´®,±íÊ¾´ý½âÂëÐÅÔªµÄ Tag ;
+ÊäÈëµÄµÚ¶þÐÐÎªÒ»¸ö×Ö·û´®,±íÊ¾´ý½âÂëµÄ 16½øÖÆÂëÁ÷ ,×Ö½ÚÖ®¼äÓÃ¿Õ¸ñ·Ö¸ô .
+Êä³öÃèÊö:
+Êä³öÒ»¸ö×Ö·û´®,±íÊ¾´ý½âÂëÐÅÔªÒÔ16½øÖÆ±íÊ¾µÄ Value .
+3.Ê¾Àý
+ÊäÈë£º
 31
 32 01 00 AE 90 02 00 01 02 30 03 00 AB 32 31 31 02 00 32 33 33 01 00 CC
-
-è¾“å‡ºï¼?
+Êä³ö£º
 32 33
-
-4.è¯´æ˜Ž
-(1)éœ€è¦è§£æžçš„ä¿¡å…ƒçš„Tagæ˜?31,ä»Žç æµçš„èµ·å?‹å?„å¼€å§‹åŒ¹é…?,
-Tagä¸?32çš„ä¿¡å…ƒé•¿åº¦ä¸º1(01 00,å°ç??åºè¡¨ç¤ºä¸º1);
-(2)ç¬?äºŒä¸ªä¿¡å…ƒçš„Tagæ˜?90,å…¶é•¿åº¦ä¸º2;
-(3)ç¬?ä¸‰ä¸ªä¿¡å…ƒçš„Tagæ˜?30,å…¶é•¿åº¦ä¸º3;
-(4)ç¬?å››ä¸ªä¿¡å…ƒçš„Tagæ˜?31,å…¶é•¿åº¦ä¸º2(02 00),æ‰€ä»¥è¿”å›žé•¿åº¦åŽé¢çš„ä¸¤ä¸ªå­—èŠ‚å³å¯,å?32 33
+4.ËµÃ÷
+(1)ÐèÒª½âÎöµÄÐÅÔªµÄTagÊÇ31,´ÓÂëÁ÷µÄÆðÊ¼´¦¿ªÊ¼Æ¥Åä,
+TagÎª32µÄÐÅÔª³¤¶ÈÎª1(01 00,Ð¡¶ËÐò±íÊ¾Îª1);
+(2)µÚ¶þ¸öÐÅÔªµÄTagÊÇ90,Æä³¤¶ÈÎª2;
+(3)µÚÈý¸öÐÅÔªµÄTagÊÇ30,Æä³¤¶ÈÎª3;
+(4)µÚËÄ¸öÐÅÔªµÄTagÊÇ31,Æä³¤¶ÈÎª2(02 00),ËùÒÔ·µ»Ø³¤¶ÈºóÃæµÄÁ½¸ö×Ö½Ú¼´¿É,¼´32 33
 */
 #include <cstdio>
 #include "demo_inner.h"
@@ -44,7 +39,6 @@ Tagä¸?32çš„ä¿¡å…ƒé•¿åº¦ä¸º1(01 00,å°ç??åºè¡¨ç¤ºä¸º1);
 #include <cstring>
 #define CODE_STREAM_LENGTH 8
 int g_test = 3;
-
 void DemoTest01()
 {
     char tagBuf = 0x00;
@@ -58,9 +52,9 @@ void DemoTest01()
     memset(codeStream, 0, sizeof(char) * CODE_STREAM_LENGTH);
     /*
     char ch;
-    printf("è¯·è¾“å…¥å­—ç¬?chï¼?");// 1 2 3 å›žè½¦
-    scanf("%s", &ch);// è¯»å–123
-    printf("å­—ç??chçš„å€¼ï¼š%s\n",ch);//è¾“å‡º å­—ç??chçš„å€¼ï¼š123
+    printf("ÇëÊäÈë×Ö·ûch£º");// 1 2 3 »Ø³µ
+    scanf("%s", &ch);// ¶ÁÈ¡123
+    printf("×Ö·ûchµÄÖµ£º%s\n",ch);//Êä³ö ×Ö·ûchµÄÖµ£º123
     char c_tmp;
     while ((c_tmp = getchar() != '\n') && c_tmp != EOF);
     */
