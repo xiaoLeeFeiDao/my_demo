@@ -12,6 +12,7 @@ extern "C" {
 void Test01();
 void Test02();
 void Test03();
+void Test04();
 void Test11();
 void Test12();
 void Test13();
@@ -47,6 +48,8 @@ void Test42();
 void Test43();
 void Test44();
 void Test45();
+void Test46();
+void Test47();
 void TestEg1();
 void TestEg2();
 void TestEg3();

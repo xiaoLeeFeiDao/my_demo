@@ -69,9 +69,9 @@ void MyArray::display()
 MyArray::~MyArray()
 {
     cout << "析构函数" << endl;
-    if (this->m_Arry != NULL) {
+    if (this->m_Arry != nullptr) {
         delete[] this->m_Arry;
-        this->m_Arry = NULL;
+        this->m_Arry = nullptr;
     }
 }
 /**

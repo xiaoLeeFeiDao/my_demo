@@ -44,9 +44,9 @@ public:
     ~Person()
     {
         cout << "Person 析构函数的调用" << endl;
-        if (m_Name != NULL) {
+        if (m_Name != nullptr) {
             free(m_Name);
-            m_Name = NULL;
+            m_Name = nullptr;
         }
     }
 

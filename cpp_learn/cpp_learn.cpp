@@ -3,5 +3,5 @@
 
 void CppLearn()
 {
-  Test45();
+  Test04();
 }

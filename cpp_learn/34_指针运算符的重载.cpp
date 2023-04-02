@@ -41,7 +41,7 @@ class SmartPtr {
 public:
     SmartPtr()
     {
-        this->m_User = NULL;
+        this->m_User = nullptr;
     }
     SmartPtr(PrtType *User)
     {
@@ -67,10 +67,10 @@ public:
     }
     ~SmartPtr()
     {
-        if (this->m_User != NULL) {
+        if (this->m_User != nullptr) {
             cout << "SmartPtr析构" << endl;
             delete this->m_User;
-            this->m_User = NULL;
+            this->m_User = nullptr;
         }
     }
 

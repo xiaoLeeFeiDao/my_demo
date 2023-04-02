@@ -11,8 +11,17 @@
 #include "cpp_learn_inner.h"
 #include <iostream>
 using namespace std;
+int g_atk = 1000;
 
-void Test03()
+void LocalTest01()
 {
-    ;
+    int g_atk = 2000;
+    cout << "局部攻击力：" << g_atk << endl;
+    // ::作用域运算符 当::前面没有任何作用域情况下，代表使用全局作用域 
+    cout << "全局攻击力：" << ::g_atk << endl;
+}
+
+void Test02()
+{
+    LocalTest01();
 }

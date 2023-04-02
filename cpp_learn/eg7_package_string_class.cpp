@@ -9,7 +9,7 @@
 
 MyString::MyString()
 {
-    this->m_Str = NULL;
+    this->m_Str = nullptr;
     this->m_Size = 0;
 }
 MyString::MyString(const char* str)
@@ -20,18 +20,18 @@ MyString::MyString(const char* str)
 }
 MyString::MyString(const MyString& user)
 {
-    if (this->m_Str != NULL) {
+    if (this->m_Str != nullptr) {
         delete[] this->m_Str;
-        this->m_Str = NULL;
+        this->m_Str = nullptr;
     }
     strcpy(this->m_Str, user.m_Str);
     this->m_Size = strlen(this->m_Str);
 }
 istream& operator>>(istream& cin, MyString* user)
 {
-    if (user->m_Str != NULL) {
+    if (user->m_Str != nullptr) {
         delete[] user->m_Str;
-        user->m_Str = NULL;
+        user->m_Str = nullptr;
     }
     char buf[1024] = { 0 };
     cin >> buf;
@@ -53,9 +53,9 @@ void MyString::showInfo()
 }
 MyString::~MyString()
 {
-    if (this->m_Str != NULL) {
+    if (this->m_Str != nullptr) {
         delete[] this->m_Str;
-        this->m_Str = NULL;
+        this->m_Str = nullptr;
     }
 }
 /**
