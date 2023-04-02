@@ -79,4 +79,14 @@
     // "cmake.cacheInit": "/cygdrive/d/code/test_win11/build",
     // "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.configureOnOpen": true,
+    "C_Cpp.errorSquiggles": "disabled",
+    "files.encoding": "utf8bom",
+    // "cmake.cmakePath": "C:\\msys64\\usr\\bin\\cmake.exe",
+    "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1",
+        "MSYSTEM": "MINGW64",
+    },
+    // "C_Cpp.default.compilerPath": "C:\\msys64\\usr\\bin\\g++.exe",
+    "C_Cpp.default.compilerPath": "/usr/bin/g++",
 }
