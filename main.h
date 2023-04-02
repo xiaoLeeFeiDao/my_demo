@@ -11,7 +11,7 @@ extern "C" {
 #define TRUE 1
 #define FALSE 0
 #define CPP_LEARN TRUE
-#define DEMO TRUE
+#define DEMO FALSE
 
 #ifdef __cplusplus
 }

@@ -20,7 +20,7 @@
             },
             "setupCommands": [
                 {
-                    "description": "涓� gdb 鍚�鐢ㄦ暣榻愭墦鍗�",
+                    "description": "涓� gdb 鍚��?ㄦ暣榻愭墦鍗�?",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 },
@@ -65,6 +65,63 @@
                 }
             ]
             // "MIMode": "lldb"
+        },
+        {
+            "name": "WSL-ubuntu",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/test",
+            "args": [],
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "�? gdb �?用整齐打�?",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置�? Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "Cygwin gdb",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "test.exe",
+            "args": [],
+            "stopAtEntry": false,
+            // "cwd": "${workspaceFolder}/bin",
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "pipeTransport": {
+                "debuggerPath": "gdb",
+                // "pipeProgram": "C:\\cygwin64\\bin\\bash.exe",
+                "pipeProgram": "C:\\cygwin64\\bin\\bash.exe",
+                "pipeArgs": [
+                    "-c"
+                ],
+                "pipeCwd": ""
+            },
+            "setupCommands": [
+                {
+                    "description": "�? gdb �?用整齐打�?",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置�? Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
         }
     ]
 }

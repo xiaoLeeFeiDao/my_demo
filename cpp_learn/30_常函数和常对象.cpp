@@ -22,7 +22,7 @@ public:
     {
         cout << "m_Age = " << this->m_Age << endl;
         // this相当于Student const *this，是一个指针常量，即this中存放的地址是一个常量，不可以对其进行修改。
-        //  this = nullptr; //该操作是不成功的，其值为一个常量，不允许修改
+        //  this = NULL; //该操作是不成功的，其值为一个常量，不允许修改
         //但是this指针指向的内存里面的数值数据是可以修改的
         //  this->m_Age = 100;
 

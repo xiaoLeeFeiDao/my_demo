@@ -1,4 +1,4 @@
-﻿/*
+/*
  * @Description: 指针运算符重载
  * @Author: stone
  * @Date: 2020-02-14 13:43:59
@@ -41,7 +41,7 @@ class SmartPtr {
 public:
     SmartPtr()
     {
-        this->m_User = nullptr;
+        this->m_User = NULL;
     }
     SmartPtr(PrtType *User)
     {
@@ -67,10 +67,10 @@ public:
     }
     ~SmartPtr()
     {
-        if (this->m_User != nullptr) {
+        if (this->m_User != NULL) {
             cout << "SmartPtr析构" << endl;
             delete this->m_User;
-            this->m_User = nullptr;
+            this->m_User = NULL;
         }
     }
 

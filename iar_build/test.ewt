@@ -2548,6 +2548,12 @@
         <file>
             <name>$PROJ_DIR$\..\demo\demo_test01.cpp</name>
         </file>
+        <file>
+            <name>$PROJ_DIR$\..\demo\demo_test02.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\demo\demo_test03.cpp</name>
+        </file>
     </group>
     <file>
         <name>$PROJ_DIR$\..\main.cpp</name>

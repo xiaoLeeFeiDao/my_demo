@@ -1,4 +1,4 @@
-﻿/*
+/*
  * @Description: 数组类的封装
  * @Author: stone
  * @Date: 2020-02-12 11:28:27
@@ -69,9 +69,9 @@ void MyArray::display()
 MyArray::~MyArray()
 {
     cout << "析构函数" << endl;
-    if (this->m_Arry != nullptr) {
+    if (this->m_Arry != NULL) {
         delete[] this->m_Arry;
-        this->m_Arry = nullptr;
+        this->m_Arry = NULL;
     }
 }
 /**

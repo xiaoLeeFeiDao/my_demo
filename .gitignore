@@ -4,11 +4,8 @@ Debug
 *.log
 bin
 .vs
-.vscode
 out
 bin
 iar_build
 .idea
-.idea
-# .vscode
 .gitignore

@@ -82,7 +82,7 @@ void Test11()
     int b = 20;
     mySwip01(a, b); //值传递
     mySwip02(&a, &b); //地址传递
-    mySwip03(a, b); // 引用
+    mySwip03(a, b);
     cout << "a = " << a << endl;
     cout << "b = " << b << endl;
 

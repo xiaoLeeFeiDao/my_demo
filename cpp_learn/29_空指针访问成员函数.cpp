@@ -36,8 +36,8 @@ public:
     void showInfo3()
     {
         // 严谨需加一个this的判空，但是一般不这么做，减少成员函数的复杂度
-        // if (this == nullptr) {
-        //     cout << "this is nullptr" << endl;
+        // if (this == NULL) {
+        //     cout << "this is null" << endl;
         //     return;
         // }
         cout << "no info" << endl;
@@ -55,7 +55,7 @@ private:
  */
 void Test29()
 {
-    Student *stu = nullptr;
+    Student *stu = NULL;
     // stu->showInfo1();
     // stu->showInfo2();
     //空指针可以访问成员函数，只是该成员函数中不能有该对象传入的空指针或者隐藏的this指针

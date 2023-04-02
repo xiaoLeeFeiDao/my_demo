@@ -1,4 +1,4 @@
-﻿/*
+/*
  * @Description: 深拷贝和浅拷贝
  * @Author: stone
  * @Date: 2020-02-05 17:39:39
@@ -44,9 +44,9 @@ public:
     ~Person()
     {
         cout << "Person 析构函数的调用" << endl;
-        if (m_Name != nullptr) {
+        if (m_Name != NULL) {
             free(m_Name);
-            m_Name = nullptr;
+            m_Name = NULL;
         }
     }
 

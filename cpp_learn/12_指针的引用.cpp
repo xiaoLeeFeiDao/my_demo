@@ -46,14 +46,14 @@ static void allocSpace02(Person *&p)
  */
 void Test12()
 {
-    Person *p = nullptr;
+    Person *p = NULL;
     allocSpace01(&p);
-    if (p != nullptr) {
+    if (p != NULL) {
         free(p);
     }
 
     allocSpace02(p);
-    if (p != nullptr) {
+    if (p != NULL) {
         free(p);
     }
     return;

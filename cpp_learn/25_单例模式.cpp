@@ -57,7 +57,7 @@ void Test25()
     // } else {
     //     cout << "c1 != c2" << endl;
     // }
-    // ChairMan::sigleMan = nullptr;  //如果这个sigleMan为public，那么类外可以对其进行访问修改，作为一个共享的数据，这是非常危险的操作
+    // ChairMan::sigleMan = NULL;  //如果这个sigleMan为public，那么类外可以对其进行访问修改，作为一个共享的数据，这是非常危险的操作
 
     //// 因此，需要将该静态成员属性设置为私有的属性，然后对外提供一个可读的接口，这样就能确保数据的安全，类外无法修改这个共享数据
     // ChairMan* c1 = ChairMan::getInstance();

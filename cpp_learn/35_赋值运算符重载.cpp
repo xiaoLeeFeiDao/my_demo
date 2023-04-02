@@ -15,7 +15,7 @@ class Person {
 public:
     Person()
     {
-        this->m_Name = nullptr;
+        this->m_Name = NULL;
         this->m_Age = 0;
     }
     Person(const char *name, int age)
@@ -44,9 +44,9 @@ public:
     Person &operator=(const Person &user)
     {
         //需要对=的左值的指针判空
-        if (this->m_Name != nullptr) {
+        if (this->m_Name != NULL) {
             delete[] this->m_Name;
-            this->m_Name = nullptr;
+            this->m_Name = NULL;
         }
         this->m_Name = new char[strlen(user.m_Name + 1)];
         strcpy(this->m_Name, user.m_Name);
@@ -61,10 +61,10 @@ public:
     }
     ~Person()
     {
-        if (this->m_Name != nullptr) {
+        if (this->m_Name != NULL) {
             cout << "析构" << endl;
             delete[] this->m_Name;
-            this->m_Name = nullptr;
+            this->m_Name = NULL;
         };
     }
 

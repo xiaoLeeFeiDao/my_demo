@@ -6,7 +6,8 @@
         "atomic": "cpp",
         "cstdint": "cpp",
         "cstring": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "cpp_learn_inner.h": "c"
     },
     "C_Cpp.clang_format_path": "Microsoft",
     "C_Cpp.clang_format_style": "Visual Studio",
@@ -27,8 +28,8 @@
         "cygwin": {
             "path": "C:\\cygwin64\\bin\\bash.exe",
             "env": {
-                // "HOME": "${workspaceFolder}", // 错误：不支持win风格路径
-                "CHERE_INVOKING": "1" // cygwin默认执行/etc/profile以检查环境变量CHERE_INVOKING，如果设置，则禁止更改目录到$HOME。
+                // "HOME": "${workspaceFolder}", // 错�??：不�?持win风格�?�?
+                "CHERE_INVOKING": "1" // cygwin默�?�执�?/etc/profile以�?�查环境变量CHERE_INVOKING，�?�果设置，则禁�?�更改目录到$HOME�?
             },
             "icon": "terminal-bash",
             "args": [
@@ -55,7 +56,7 @@
     // "terminal.integrated.defaultProfile.windows": "PowerShell",
     "files.encoding": "utf8",
     // "files.encoding": "gb2312",
-    // "window.zoomLevel": 0.0, // 调整窗口的缩放级别
+    // "window.zoomLevel": 0.0, // 调整窗口的缩放级�?
     "window.zoomLevel": 0.5,
     // --------------- cmake config ------------------------------------------
     // "cmake.sourceDirectory": "d:/code/test_win11",
@@ -74,7 +75,7 @@
     // "cmake.sourceDirectory": "/cygdrive/d/code/test_win11",
     // "cmake.sourceDirectory": "D:/code/test_win11",
     // "cmake.outputLogEncoding": "gbk",
-    // "cmake.buildTask": false, // 设置为true表示将从tasks.json进行build，编译过程在终端展示而不是输出中展示
+    // "cmake.buildTask": false, // 设置为true表示将从tasks.json进�?�build，编译过程在终�??展示而不�?输出�?展示
     // "cmake.configureOnOpen": true,
     "cmake.platform": "Unix Makefiles",
     // "cmake.generator": "MinGW Makefiles",
@@ -85,7 +86,8 @@
     "cmake.configureOnOpen": true,
     "C_Cpp.errorSquiggles": "disabled",
     // "cmake.cmakePath": "C:\\msys64\\usr\\bin\\cmake.exe",
-    "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+    // "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+    "cmake.cmakePath": "/usr/bin/cmake",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1",
         "MSYSTEM": "MINGW64",
