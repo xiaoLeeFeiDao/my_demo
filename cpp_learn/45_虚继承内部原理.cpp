@@ -2,12 +2,15 @@
  * @Author: stone8419 XiaoLeeFeiDao@yandex.com
  * @Date: 2023-04-02 10:52:28
  * @LastEditors: stone8419 XiaoLeeFeiDao@yandex.com
- * @LastEditTime: 2023-04-02 10:55:02
- * @FilePath: /test_win11/cpp_learn/45_Ğé¼Ì³ĞÄÚ²¿Ô­Àí.cpp
+ * @LastEditTime: 2023-04-02 11:17:59
+ * @FilePath: /my_demo/cpp_learn/45_è™šç»§æ‰¿å†…éƒ¨åŸç†.cpp
  * @Description: 
  * Copyright (c) 2023 by ${git_name} email: ${git_email}, All Rights Reserved.
  */
 #include "cpp_learn_inner.h"
+#include <iostream>
+
+using namespace std;
 class animal {
 public:
     int m_Age;

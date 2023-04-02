@@ -2,8 +2,8 @@
  * @Author: stone8419 XiaoLeeFeiDao@yandex.com
  * @Date: 2023-03-25 22:46:48
  * @LastEditors: stone8419 XiaoLeeFeiDao@yandex.com
- * @LastEditTime: 2023-03-25 23:06:03
- * @FilePath: /test_win11/cpp_learn/07_c++对c语言的增强-const增强.c
+ * @LastEditTime: 2023-04-02 11:16:42
+ * @FilePath: /my_demo/cpp_learn/07_c++对c语言的增强-const增强.c
  * @Description:
  * Copyright (c) 2023 by ${git_name} email: ${git_email}, All Rights Reserved.
  */
@@ -19,7 +19,7 @@ static void LocalTest01()
 
     const int l_B = 20; // 局部const修饰的变量可以通过指针间接的修改，因此局部const修饰的变量在c语言中也称为伪常量
     // l_B = 23; // 局部const修饰的变量也是不可以直接修改
-    int *ptr = &l_B; // 但是可以通过指针间接修改
+    int *ptr = (int *)&l_B; // 但是可以通过指针间接修改,可能不加强转会有告警
     *ptr = 35; // 修改后运行时不会报错
     printf("l_B = %d\n", l_B);
     printf("*ptr = %d\n", *ptr);

@@ -45,17 +45,21 @@
         },
         "GitBash": {
             "source": "Git Bash"
+        },
+        "MacOSBash": {
+            "source": "Git Bash"
         }
     },
     // "terminal.integrated.defaultProfile.windows": "cygwin",
     "terminal.integrated.defaultProfile.windows": "Command Prompt",
     // "terminal.integrated.defaultProfile.windows": "PowerShell",
-    // "files.encoding": "utf8",
-    "files.encoding": "gb2312",
+    "files.encoding": "utf8",
+    // "files.encoding": "gb2312",
     // "window.zoomLevel": 0.0, // 调整窗口的缩放级别
     "window.zoomLevel": 0.5,
     // --------------- cmake config ------------------------------------------
-    "cmake.sourceDirectory": "d:/code/test_win11",
+    // "cmake.sourceDirectory": "d:/code/test_win11",
+    "cmake.sourceDirectory": "${workspaceFolder}/.",
     // "cmake.sourceDirectory": "${workspaceFolder}/.",
     // "cmake.cacheInit": "build", // 
     "cmake.buildDirectory": "${workspaceFolder}/build",
@@ -80,7 +84,6 @@
     // "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.configureOnOpen": true,
     "C_Cpp.errorSquiggles": "disabled",
-    "files.encoding": "utf8bom",
     // "cmake.cmakePath": "C:\\msys64\\usr\\bin\\cmake.exe",
     "cmake.cmakePath": "/opt/homebrew/bin/cmake",
     "terminal.integrated.env.windows": {

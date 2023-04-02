@@ -1,17 +1,13 @@
 {
     "configurations": [
-        
         {
             "name": "Cygwin gdb",
-            "name": "MacOS (lldb) 鍚�鍔�",
             "type": "cppdbg",
             "request": "launch",
-            "program": "test.exe",
             "program": "${workspaceFolder}/bin/test.out",
             "args": [],
             "stopAtEntry": false,
             // "cwd": "${workspaceFolder}/bin",
-            "cwd": "${workspaceFolder}",
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
@@ -35,6 +31,40 @@
                 }
             ]
             "MIMode": "lldb"
+        },
+        {
+            "name": "MacOS lldb",
+            "type": "cppdbg",
+            "request": "launch",
+            "program": "${workspaceFolder}/bin/test.out",
+            "args": [],
+            "stopAtEntry": false,
+            // "cwd": "${workspaceFolder}/bin",
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "pipeTransport": {
+                "debuggerPath": "gdb",
+                // "pipeProgram": "C:\\cygwin64\\bin\\bash.exe",
+                // "pipeProgram": "C:\\cygwin64\\bin\\bash.exe",
+                "pipeArgs": [
+                    "-c"
+                ],
+                "pipeCwd": ""
+            },
+            "setupCommands": [
+                {
+                    "description": "",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+            // "MIMode": "lldb"
         }
     ]
 }
