@@ -9,3 +9,6 @@ out
 bin
 iar_build
 .idea
+.idea
+# .vscode
+.gitignore

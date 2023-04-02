@@ -1,16 +1,28 @@
-ï»¿#include "cpp_learn_inner.h"
+/*
+ * @Author: stone8419 XiaoLeeFeiDao@yandex.com
+ * @Date: 2023-04-02 10:52:28
+ * @LastEditors: stone8419 XiaoLeeFeiDao@yandex.com
+ * @LastEditTime: 2023-04-02 10:55:02
+ * @FilePath: /test_win11/cpp_learn/45_Ðé¼Ì³ÐÄÚ²¿Ô­Àí.cpp
+ * @Description: 
+ * Copyright (c) 2023 by ${git_name} email: ${git_email}, All Rights Reserved.
+ */
+#include "cpp_learn_inner.h"
 class animal {
 public:
     int m_Age;
 };
 
-class Sheep : virtual public animal {
+class Sheep : virtual public animal
+{
 };
 
-class Tuo : virtual public animal {
+class Tuo : virtual public animal
+{
 };
 
-class SheepTuo : public Sheep, public Tuo {
+class SheepTuo : public Sheep, public Tuo
+{
 };
 
 void Test45()

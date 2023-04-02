@@ -1,8 +1,8 @@
 ﻿/*
  * @Author: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
  * @Date: 2022-11-01 00:29:20
- * @LastEditors: error: error: git config user.name & please set dead value or install git && error: git config user.email & please set dead value or install git & please set dead value or install git
- * @LastEditTime: 2023-03-05 07:56:25
+ * @LastEditors: stone8419 XiaoLeeFeiDao@yandex.com
+ * @LastEditTime: 2023-04-02 08:06:42
  * @FilePath: /test_win11/cpp_learn/03_命名空间.cpp
  * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
  */
@@ -20,7 +20,6 @@ namespace B
     {
         int m_A = 20;
     } // namespace name
-
 } // namespace name
 
 int VeryLongName::m_G = 5;
