@@ -6,7 +6,6 @@ extern "C" {
 #define FALSE 0
 #define TRUE 1
 #define CONFLICT_ERR_DISPALY FALSE
-
 void Test01();
 void Test02();
 void Test03();

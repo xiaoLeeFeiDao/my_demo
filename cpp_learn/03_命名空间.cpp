@@ -16,7 +16,7 @@ using namespace std;
 namespace B
 {
     int m_A = 10;
-    namespace C
+    namespace C 
     {
         int m_A = 20;
     } // namespace name
