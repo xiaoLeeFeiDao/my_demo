@@ -8,6 +8,7 @@ void DemoTest01();
 void DemoTest02();
 void DemoTest03();
 void DemoTest04();
+void DemoTest05();
 
 #ifdef __cplusplus
 }

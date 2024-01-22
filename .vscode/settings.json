@@ -7,7 +7,10 @@
         "cstdint": "cpp",
         "cstring": "cpp",
         "iostream": "cpp",
-        "cpp_learn_inner.h": "c"
+        "cpp_learn_inner.h": "c",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp"
     },
     "C_Cpp.clang_format_path": "Microsoft",
     "C_Cpp.clang_format_style": "Visual Studio",
@@ -57,7 +60,7 @@
     "files.encoding": "utf8",
     // "files.encoding": "gb2312",
     // "window.zoomLevel": 0.0, // 调整窗口的缩放级�?
-    "window.zoomLevel": 0.5,
+    "window.zoomLevel": 0,
     // --------------- cmake config ------------------------------------------
     // "cmake.sourceDirectory": "d:/code/test_win11",
     "cmake.sourceDirectory": "${workspaceFolder}/.",

@@ -14,8 +14,9 @@ include_directories(demo/include)
 message(STATUS ${CURRENT_SRC_LIST})
 add_executable(${PROJECT_NAME} ${CURRENT_SRC_LIST})
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
-find_package(OpenSSL REQUIRED)
+include_directories(/usr/include/cjson)
 
-target_link_libraries(${PROJECT_NAME} PRIVATE OpenSSL::Crypto)
+find_package(OpenSSL REQUIRED)
+target_link_libraries(${PROJECT_NAME} PRIVATE OpenSSL::Crypto cjson)
 
 # target_link_libraries(${PROJECT_NAME} cpp_learn demo)
