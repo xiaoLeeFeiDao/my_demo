@@ -1,0 +1,159 @@
+{
+    "FILE_NAME": "scuba_alarm.csv",
+    "TEST_CONTENT": [
+        "EOPI_ALARM_SCUBA_ASCENT_01",
+        "EOPI_ALARM_SCUBA_PO2_WARNING",
+        "EOPI_ALARM_SCUBA_PO2",
+        "EOPI_ALARM_SCUBA_CNS_WARNING",
+        "EOPI_ALARM_SCUBA_CNS",
+        "EOPI_ALARM_SCUBA_NDL_10_MIN",
+        "EOPI_ALARM_SCUBA_NDL_5_MIN",
+        "EOPI_ALARM_SCUBA_NDL_3_MIN",
+        "EOPI_ALARM_SCUBA_NDL_1_MIN",
+        "EOPI_ALARM_SCUBA_NDL_0_MIN",
+        "EOPI_ALARM_TIME_01",
+        "EOPI_ALARM_DEPTH_01"
+    ],
+    "SETTING": {
+        "version": 0,
+        "setting_length": 393,
+        "auto_mode": 1,
+        "select_mode": 0,
+        "water_type": 1,
+        "salinity": 103,
+        "sampling_rate": 30,
+        "user": {
+            "age": 20,
+            "weight": 75
+        },
+        "scuba_recreational": {
+            "common": {
+                "start_depth": 15,
+                "start_time": 0,
+                "stop_depth": 15,
+                "stop_time": 60
+            },
+            "algorithm": 1,
+            "cylinder": {
+                "type": 0,
+                "percentage_O2": 32,
+                "percentage_He": 0,
+                "limit_PO2": 14
+            },
+            "alarm_depth": [300, 0, 0, 0, 0],
+            "alarm_time": [1800, 0, 0, 0, 0],
+            "alarm_ascent": [0.1, 999],
+            "alarm_descent": [999, 999],
+            "alarm_deco_stop_too_deep_depth": 300,
+            "alarm_time_to_surface_too_long": 1800,
+            "deco_stop_last_stop_depth": 50,
+            "safety_stop_required_depth": 90,
+            "safety_stop_depth": 50,
+            "conservatism": 1,
+            "safety_factor": 0.92,
+            "gradient_factor_high": 0.85,
+            "gradient_factor_low": 0.4
+        },
+        "scuba_technical": {
+            "common": {
+                "start_depth": 0,
+                "start_time": 0,
+                "stop_depth": 0,
+                "stop_time": 0
+            },
+            "algorithm": 0,
+            "cylinder": {
+                "type": 0,
+                "percentage_O2": 0,
+                "percentage_He": 0,
+                "limit_PO2": 0
+            },
+            "alarm_depth": [0, 0, 0, 0, 0],
+            "alarm_time": [0, 0, 0, 0, 0],
+            "alarm_ascent": [0, 0],
+            "alarm_descent": [0, 0],
+            "safety_factor": 0,
+            "gradient_factor_high": 0,
+            "gradient_factor_low": 0
+        },
+        "scuba_commercial": {
+            "common": {
+                "start_depth": 0,
+                "start_time": 0,
+                "stop_depth": 0,
+                "stop_time": 0
+            },
+            "algorithm": 0,
+            "cylinder": {
+                "type": 0,
+                "percentage_O2": 0,
+                "percentage_He": 0,
+                "limit_PO2": 0
+            },
+            "alarm_depth": [0, 0, 0, 0, 0],
+            "alarm_time": [0, 0, 0, 0, 0],
+            "alarm_ascent": [0, 0],
+            "alarm_descent": [0, 0]
+        },
+        "scuba_ccr": {
+            "common": {
+                "start_depth": 0,
+                "start_time": 0,
+                "stop_depth": 0,
+                "stop_time": 0
+            },
+            "algorithm": 0,
+            "cylinder": {
+                "type": 0,
+                "percentage_O2": 0,
+                "percentage_He": 0,
+                "limit_PO2": 0
+            },
+            "alarm_depth": [0, 0, 0, 0, 0],
+            "alarm_time": [0, 0, 0, 0, 0],
+            "alarm_ascent": [0, 0],
+            "alarm_descent": [0, 0]
+        },
+        "gauge": {
+            "common": {
+                "start_depth": 15,
+                "start_time": 0,
+                "stop_depth": 15,
+                "stop_time": 60
+            }
+        },
+        "freedive": {
+            "common": {
+                "start_depth": 15,
+                "start_time": 0,
+                "stop_depth": 15,
+                "stop_time": 9999
+            },
+            "RRT_factor": 2,
+            "alarm_depth": [300, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "alarm_time": [120, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "alarm_surface_interval": [60, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "hunting": {
+            "common": {
+                "start_depth": 0,
+                "start_time": 0,
+                "stop_depth": 0,
+                "stop_time": 0
+            },
+            "RRT_factor": 0,
+            "alarm_depth": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "alarm_time": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0],
+            "alarm_surface_interval": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0]
+        },
+        "pool": {
+            "common": {
+                "start_depth": 0,
+                "start_time": 0,
+                "stop_depth": 0,
+                "stop_time": 0
+            }
+        },
+        "checksum": 28
+    }
+}
