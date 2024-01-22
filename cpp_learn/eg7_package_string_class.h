@@ -14,9 +14,6 @@
 #include <iostream>
 #include <string>
 using namespace std;
-#ifdef __cplusplus
-extern "C" {
-#endif
 class MyString {
     friend istream &operator>>(istream &cin, MyString *user);
 
@@ -32,7 +29,5 @@ private:
     char *m_Str;
     int m_Size;
 };
-#ifdef __cplusplus
-}
-#endif
+
 #endif // _EG7_PACKAGE_STRING_CLASS_H
