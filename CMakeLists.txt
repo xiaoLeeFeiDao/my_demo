@@ -15,8 +15,10 @@ message(STATUS ${CURRENT_SRC_LIST})
 add_executable(${PROJECT_NAME} ${CURRENT_SRC_LIST})
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 include_directories(/usr/include/cjson)
+include_directories(/usr/include/jsoncpp)
 
 find_package(OpenSSL REQUIRED)
-target_link_libraries(${PROJECT_NAME} PRIVATE OpenSSL::Crypto cjson)
+find_package(jsoncpp)
+target_link_libraries(${PROJECT_NAME} PRIVATE OpenSSL::Crypto cjson jsoncpp)
 
 # target_link_libraries(${PROJECT_NAME} cpp_learn demo)
