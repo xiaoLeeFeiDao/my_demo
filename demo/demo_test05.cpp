@@ -85,7 +85,7 @@ void parseJSON(cJSON *json, ScubaData *scubaData, const char *parent_name) {
                 }
             } else if (objectItem->type == cJSON_String) {
                 // 处理字符串
-                strncpy((char *)scubaData + (size_t)&(((ScubaData *)0)->FILE_NAME), objectItem->valuestring, sizeof(objectItem->valuestring));
+                strncpy((char *)scubaData + (size_t)&(((ScubaData *)0)->FILE_NAME), objectItem->valuestring, strlen(objectItem->valuestring) + 1);
             }
 
             // 打印字段名和值

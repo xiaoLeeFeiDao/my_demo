@@ -44,7 +44,7 @@ void calculateMD5(const char *filename, char *md5sum)
     EVP_MD_CTX_free(mdContext);
 
     for (unsigned int i = 0; i < mdLen; i++) {
-        sprintf(md5sum + 2 * i, "%02x", mdValue[i]);
+        snprintf(md5sum + 2 * i, 2, "%02x", mdValue[i]);
     }
     md5sum[MAX_FILENAME_LENGTH - 1] = '\0';
 }

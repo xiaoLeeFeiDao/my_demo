@@ -10,7 +10,9 @@ void DemoTest03();
 void DemoTest04();
 void DemoTest05();
 void DemoTest06();
+#if !defined(__APPLE__)
 void DemoTest07();
+#endif
 
 #ifdef __cplusplus
 }
