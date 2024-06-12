@@ -1,3 +1,4 @@
+#if SUPPORT_OPENSSL_LIB
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -94,3 +95,4 @@ void DemoTest04()
         copyFile(sourcePath, destinationPath);
     }
 }
+#endif

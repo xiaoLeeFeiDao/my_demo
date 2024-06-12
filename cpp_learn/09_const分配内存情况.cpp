@@ -34,7 +34,7 @@ void Test09()
         string name;
         int age;
     };
-    const Person p { "Xiaol", 28 };
+    const Person p = { "Xiaol", 28 };
     // 不可以直接修改
     // p.age = 100;
     // p.name = "stone";
