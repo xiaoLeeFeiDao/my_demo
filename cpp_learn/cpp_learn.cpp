@@ -6,5 +6,5 @@
 using namespace std;
 void CppLearn()
 {
-    Test45();
+    Test10();
 }

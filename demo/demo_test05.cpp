@@ -1,3 +1,4 @@
+#ifdef SUPPORT_JSON_LIB
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
@@ -190,3 +191,4 @@ void DemoTest05()
         perror("Unable to open directory");
     }
 }
+#endif

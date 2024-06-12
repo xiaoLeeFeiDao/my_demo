@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.0.0)
+cmake_minimum_required(VERSION 3.29.0)
 project(test)
 message(STATUS "my system:${CMAKE_HOST_SYSTEM_NAME}")
 
@@ -10,19 +10,21 @@ include_directories(cpp_learn/include)
 include_directories(demo/include)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_SOURCE_DIR}/bin)
 
-find_path(
-  CJSON_INCLUDE_DIR cJSON.h
-  # 你的头文件可能在这个路径下
-  PATHS /usr/local/include /usr/include/cjson
-  # 你的头文件可能在这个子目录下
-  PATH_SUFFIXES cJSON)
-message(STATUS "cJSON include dir:${CJSON_INCLUDE_DIR}")
-# 如果找到头文件，则添加include目录
-if(CJSON_INCLUDE_DIR)
-  include_directories(${CJSON_INCLUDE_DIR})
-endif()
-find_package(cjson REQUIRED)
-message(STATUS "cJSON libraries: ${CJSON_LIBRARIES}")
+# find_path(
+#   CJSON_INCLUDE_DIR cJSON.h
+#   # 你的头文件可能在这个路径下
+#   PATHS /usr/local/include /usr/include/cjson /usr/lib/cmake/cJSON /usr/lib
+#   # 你的头文件可能在这个子目录下
+#   PATH_SUFFIXES cJSON)
+# message(STATUS "cJSON include dir:${CJSON_INCLUDE_DIR}")
+# # 如果找到头文件，则添加include目录
+# if(CJSON_INCLUDE_DIR)
+#   include_directories(${CJSON_INCLUDE_DIR})
+# endif()
+set(CMAKE_PREFIX_PATH "/usr/lib" ${CMAKE_PREFIX_PATH})
+set(cjson_DIR "/usr/lib/cmake/cJSON")
+
+message(STATUS "cJSON libraries: ${CMAKE_PREFIX_PATH}")
 
 find_package(OpenSSL REQUIRED)
 
@@ -43,7 +45,8 @@ message(STATUS "cur src dir:${CMAKE_CURRENT_SOURCE_DIR}")
 
 # target_include_directories(${PROJECT_NAME} PRIVATE ${jsoncpp_INCLUDE_DIRS})
 if(NOT CMAKE_HOST_SYSTEM_NAME STREQUAL "Darwin")
-  find_package(jsoncpp REQUIRED)
+  # find_package(jsoncpp REQUIRED)
+  set(CMAKE_CXX_STANDARD 14)
 else()
   # 从 CURRENT_SRC_LIST 中移除 demo_test07.cpp 文件
   list(REMOVE_ITEM CURRENT_SRC_LIST "demo/demo_test07.cpp")

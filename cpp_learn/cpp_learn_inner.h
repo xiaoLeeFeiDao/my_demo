@@ -9,6 +9,14 @@ extern "C" {
 void Test01();
 void Test02();
 void Test03();
+void Test04();
+void Test0501();
+void Test0502();
+void Test06();
+void Test07();
+void Test08();
+void Test09();
+void Test10();
 void Test11();
 void Test12();
 void Test13();

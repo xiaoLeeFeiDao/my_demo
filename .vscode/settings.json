@@ -10,7 +10,8 @@
         "cpp_learn_inner.h": "c",
         "array": "cpp",
         "string": "cpp",
-        "string_view": "cpp"
+        "string_view": "cpp",
+        "bitset": "cpp"
     },
     "C_Cpp.clang_format_path": "Microsoft",
     "C_Cpp.clang_format_style": "Visual Studio",
@@ -80,7 +81,7 @@
     // "cmake.outputLogEncoding": "gbk",
     // "cmake.buildTask": false, // 设置为true表示将从tasks.json进�?�build，编译过程在终�??展示而不�?输出�?展示
     // "cmake.configureOnOpen": true,
-    "cmake.platform": "Unix Makefiles",
+    // "cmake.platform": "Unix Makefiles",
     // "cmake.generator": "MinGW Makefiles",
     // "cmake.generator": "Unix Makefiles",
     // "cmake.cacheInit": "d:/code/test_win11/build"
@@ -89,12 +90,18 @@
     "cmake.configureOnOpen": true,
     "C_Cpp.errorSquiggles": "disabled",
     // "cmake.cmakePath": "C:\\msys64\\usr\\bin\\cmake.exe",
-    "cmake.cmakePath": "/opt/homebrew/bin/cmake",
+    // "cmake.cmakePath": "/opt/homebrew/bin/cmake",
     // "cmake.cmakePath": "/usr/bin/cmake",
+    "cmake.cmakePath": "/usr/sbin/cmake",
     "terminal.integrated.env.windows": {
         "CHERE_INVOKING": "1",
         "MSYSTEM": "MINGW64",
     },
     // "C_Cpp.default.compilerPath": "C:\\msys64\\usr\\bin\\g++.exe",
     "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    // "editor.fontFamily": "'Fira Code', 'FiraCode-Retina', 'FiraCode-Light', 'FiraCode-Medium', 'FiraCode-Bold'",
+    // "editor.fontFamily":"'FiraCode-Retina', '华为楷体', monospace",
+    "editor.fontFamily": "Hack, '华为楷体', monospace",
+    "editor.fontLigatures": true,
+    "terminal.integrated.fontFamily": "Hack",
 }

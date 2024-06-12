@@ -1,3 +1,4 @@
+#ifdef SUPPORT_JSON_LIB
 #include "cJSON.h"
 #include "demo_inner.h"
 #include <stdio.h>
@@ -325,3 +326,4 @@ void DemoTest06() {
   }
   printf("\n");
 }
+#endif

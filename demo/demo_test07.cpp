@@ -1,3 +1,4 @@
+#ifdef SUPPORT_JSON_LIB
 #include "demo_inner.h"
 #include <fstream>
 #include <iostream>
@@ -165,3 +166,4 @@ void DemoTest07() {
 
   return;
 }
+#endif

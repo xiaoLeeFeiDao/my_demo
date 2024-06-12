@@ -25,7 +25,7 @@ static void LocalTest01()
     printf("*ptr = %d\n", *ptr);
     return;
 }
-void Test07()
+void Test06()
 {
     LocalTest01();
     return;

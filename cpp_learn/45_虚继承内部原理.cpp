@@ -1,5 +1,6 @@
 #include "cpp_learn_inner.h"
 #include <iostream>
+#include <cstdint>
 
 using namespace std;
 using namespace std;

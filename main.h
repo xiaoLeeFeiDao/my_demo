@@ -10,8 +10,8 @@ extern "C" {
 #endif
 #define TRUE 1
 #define FALSE 0
-#define CPP_LEARN FALSE
-#define DEMO TRUE
+#define CPP_LEARN TRUE
+#define DEMO FALSE
 
 #ifdef __cplusplus
 }
