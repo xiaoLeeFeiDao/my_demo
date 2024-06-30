@@ -22,7 +22,7 @@ static void LocalTest01()
     int *ptr = (int *)&l_B; // 但是可以通过指针间接修改,可能不加强转会有告警
     *ptr = 35; // 修改后运行时不会报错
     printf("l_B = %d\n", l_B);
-    printf("*ptr = %d\n", *ptr);
+    printf("*ptr = %d,%d\n", *ptr, g_A);
     return;
 }
 void Test06()

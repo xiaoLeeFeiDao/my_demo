@@ -6,7 +6,7 @@ using namespace std;
 void Test10()
 {
     int a = 10;
-    int &b = a;
+    int &b = a; // 用途：给内存起别名 语法：type &别名 = 原名
     b = 20;
     cout << "a = " << a << endl;
     int d = 30;
@@ -21,6 +21,12 @@ void Test10()
     // 3、建立对数组的引用
     int arr[10];
     int (&pArr)[10] = arr;
+    for (size_t i = 0; i < 10; i++) {
+        arr[i] = i;
+    }
 
+    for (int i = 10 - 1; i >= 0; i--) {
+        cout << "arr[" << i << "] = " << arr[i] << endl;
+    }
 
 }
