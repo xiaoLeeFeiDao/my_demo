@@ -6,10 +6,17 @@ extern "C" {
 #define FALSE 0
 #define TRUE 1
 #define CONFLICT_ERR_DISPALY FALSE
-
 void Test01();
 void Test02();
 void Test03();
+void Test04();
+void Test0501();
+void Test0502();
+void Test06();
+void Test07();
+void Test08();
+void Test09();
+void Test10();
 void Test11();
 void Test12();
 void Test13();
@@ -45,6 +52,13 @@ void Test42();
 void Test43();
 void Test44();
 void Test45();
+void Test46();
+void Test47();
+void Test48();
+void Test49();
+void Test50();
+void Test51();
+void Test52();
 void TestEg1();
 void TestEg2();
 void TestEg3();

@@ -1,5 +1,6 @@
 #include "cpp_learn_inner.h"
 #include <iostream>
+#include <cstdint>
 
 using namespace std;
 using namespace std;
@@ -26,6 +27,7 @@ public:
 void Test45()
 {
     SheepTuo st;
+
     st.m_Age = 100;
     //int *p = (int *)0x80000000;
     //cout << &p << *p << endl;

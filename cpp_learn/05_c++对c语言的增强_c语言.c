@@ -12,6 +12,10 @@
 #include <stdlib.h>
 #include "cpp_learn_inner.h"
 #define COMPILE_LEVEL 0
+#define SINGLE_MAIN 0
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 #if COMPILE_LEVEL
 // 1、全局变量检测增强 c语言允许全局变量重复定义
@@ -21,10 +25,11 @@ int a = 10;
 // 2、函数检测增强 c语言没有写返回值、没有写形参类型可以编译通过
 GetRectS(w, h)
 {
+    // return w + h; // 就算不返回c语言编译器也可以通过
 }
 
 // 3、类型转换检测增强
-void LocalTest01()
+void LocalTest03()
 {
     // 未对malloc内存进行类型强制转换，但是c语言不会报错
     char *p = malloc(64);
@@ -35,10 +40,9 @@ void LocalTest01()
 }
 
 // 4、struct增强，c++中可以在声明时不用加struct
-struct Person
-{
+struct Person {
     int age;
-    // 不允许放函数
+    // 不允许放函数,C++语言下，结构体中可以放函数
     // void Func();
 };
 
@@ -62,7 +66,7 @@ static void LocalTest01()
     printf("b = %d\n", b);
 }
 #endif
-void Test05()
+void Test0502()
 {
 #if COMPILE_LEVEL
     // 2.1、传参个数不规范，在c语言中也可以编译通过
@@ -70,3 +74,14 @@ void Test05()
     LocalTest01();
 #endif
 }
+#ifdef __cplusplus
+}
+#endif
+
+#if SINGLE_MAIN
+int main()
+{
+    Test0502();
+    return 0;
+}
+#endif

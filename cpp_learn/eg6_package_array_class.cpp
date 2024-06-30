@@ -10,21 +10,21 @@
 
 MyArray::MyArray()
 {
-    cout << "默认构造函数" << endl;
+    cout << "default destructor func" << endl;
     this->m_Count = 100;
     this->m_Size = 0;
     m_Arry = new int[this->m_Count];
 }
 MyArray::MyArray(int count)
 {
-    cout << "有参构造函数" << endl;
+    cout << "args destructor func" << endl;
     this->m_Count = count;
     this->m_Size = 0;
     m_Arry = new int[this->m_Count];
 }
 MyArray::MyArray(const MyArray& arr)
 {
-    cout << "拷贝构造函数" << endl;
+    cout << "copy destructor func" << endl;
     this->m_Count = arr.m_Count;
     this->m_Size = arr.m_Size;
     this->m_Arry = new int[arr.m_Count];
@@ -68,16 +68,16 @@ void MyArray::display()
 }
 MyArray::~MyArray()
 {
-    cout << "析构函数" << endl;
+    cout << "distructor func called" << endl;
     if (this->m_Arry != NULL) {
         delete[] this->m_Arry;
         this->m_Arry = NULL;
     }
 }
 /**
- * @description: 
- * @param : 
- * @return: 
+ * @description:
+ * @param :
+ * @return:
  */
 void TestEg6()
 {

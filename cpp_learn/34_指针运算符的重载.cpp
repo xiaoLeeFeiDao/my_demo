@@ -15,12 +15,12 @@ class PrtType {
 public:
     PrtType()
     {
-        cout << "PrtType默认构造" << endl;
+        cout << "PrtType default constructor called" << endl;
         this->m_Age = 0;
     }
     PrtType(int age)
     {
-        cout << "PrtType有参构造" << endl;
+        cout << "PrtType had args called" << endl;
         this->m_Age = age;
     }
     void showInfo()
@@ -30,7 +30,7 @@ public:
     }
     ~PrtType()
     {
-        cout << "PrtType析构" << endl;
+        cout << "PrtType distructor func" << endl;
     }
 
 private:
@@ -45,7 +45,7 @@ public:
     }
     SmartPtr(PrtType *User)
     {
-        cout << "SmartPtr有参构造" << endl;
+        cout << "SmartPtr had args construct" << endl;
         this->m_User = User;
     }
     SmartPtr(const SmartPtr &User)

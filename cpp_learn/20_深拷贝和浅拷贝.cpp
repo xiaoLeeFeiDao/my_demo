@@ -15,7 +15,7 @@ class Person {
 public:
     Person(const char *name, int age)
     {
-        cout << "Person 有参函数的调用" << endl;
+        cout << "Person had args calls" << endl;
         m_Name = (char *)malloc(strlen(name) + 1); // strlen函数如果入参是char*,则需包含头文件为<cstring>
         memset(m_Name, 0, sizeof(strlen(m_Name)));
         strcpy(m_Name, name);
@@ -43,7 +43,7 @@ public:
     }
     ~Person()
     {
-        cout << "Person 析构函数的调用" << endl;
+        cout << "Person destructor calls" << endl;
         if (m_Name != NULL) {
             free(m_Name);
             m_Name = NULL;

@@ -12,14 +12,16 @@
 
 using namespace std;
 
-void Test06()
+void Test0501()
 {
-    cout << "Test06" << endl;
+    cout << "Test0501" << endl;
 
     // 5、 bool类型的增强，c语言下没有这个类型，在c++中bool类型为一个字节，代表真 true 和假 false
     bool flag = false;
     cout << "edit before flag = " << flag << endl;
     flag = true;
     cout << "edit after flag = " << flag << endl;
+    flag = 1000;
+    cout << "edit 1000 after flag = " << flag << endl;
     cout << "sizeof(flag) = " << sizeof(flag) << endl;
 }

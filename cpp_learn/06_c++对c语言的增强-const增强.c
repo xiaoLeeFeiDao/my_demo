@@ -12,6 +12,7 @@
 const int g_A = 100;
 static void LocalTest01()
 {
+    (void)g_A;
     // g_A = 200; // 全局const修饰的变量，受常量区保护不可以直接修改
 
     // int *p = &g_A; // 虽然可以通过指针来间接的修改，但是在运行时就会报错
@@ -25,7 +26,7 @@ static void LocalTest01()
     printf("*ptr = %d\n", *ptr);
     return;
 }
-void Test07()
+void Test06()
 {
     LocalTest01();
     return;
