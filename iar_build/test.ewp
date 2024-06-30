@@ -44,7 +44,7 @@
                 </option>
                 <option>
                     <name>OGCoreOrChip</name>
-                    <state>1</state>
+                    <state>0</state>
                 </option>
                 <option>
                     <name>GRuntimeLibSelect</name>
@@ -202,7 +202,7 @@
                 </option>
                 <option>
                     <name>TrustZone</name>
-                    <state>0</state>
+                    <state>1</state>
                 </option>
             </data>
         </settings>
@@ -276,7 +276,7 @@
                 <option>
                     <name>CCAllowList</name>
                     <version>1</version>
-                    <state>00000000</state>
+                    <state>11111110</state>
                 </option>
                 <option>
                     <name>CCDebugInfo</name>
@@ -358,7 +358,7 @@
                 </option>
                 <option>
                     <name>CCOptLevel</name>
-                    <state>0</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>CCOptStrategy</name>
@@ -367,7 +367,7 @@
                 </option>
                 <option>
                     <name>CCOptLevelSlave</name>
-                    <state>0</state>
+                    <state>3</state>
                 </option>
                 <option>
                     <name>CompilerMisraRules98</name>
@@ -2046,6 +2046,39 @@
         </file>
         <file>
             <name>$PROJ_DIR$\..\cpp_learn\02_双冒号作用域运算符.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\03_命名空间.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\04_using声明和using编译指令.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\05_c++对c语言的增强_c++语言.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\05_c++对c语言的增强_c语言.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\06_c++对c语言的增强-const增强.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\07_const在C语言下默认是外部链接属性.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\07_test4c.c</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\08_const在c++语言下默认是内部链接属性.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\08_test4cpp.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\09_const分配内存情况.cpp</name>
+        </file>
+        <file>
+            <name>$PROJ_DIR$\..\cpp_learn\10_引用的基本语法.cpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\cpp_learn\03_命名空间.cpp</name>

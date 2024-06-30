@@ -12,7 +12,6 @@
 const int g_A = 100;
 static void LocalTest01()
 {
-    (void)g_A;
     // g_A = 200; // 全局const修饰的变量，受常量区保护不可以直接修改
 
     // int *p = &g_A; // 虽然可以通过指针来间接的修改，但是在运行时就会报错
@@ -23,7 +22,7 @@ static void LocalTest01()
     int *ptr = (int *)&l_B; // 但是可以通过指针间接修改,可能不加强转会有告警
     *ptr = 35; // 修改后运行时不会报错
     printf("l_B = %d\n", l_B);
-    printf("*ptr = %d\n", *ptr);
+    printf("*ptr = %d,%d\n", *ptr, g_A);
     return;
 }
 void Test06()
