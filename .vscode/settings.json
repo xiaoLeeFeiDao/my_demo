@@ -107,4 +107,16 @@
     "editor.fontFamily": "Hack, '华为楷体', monospace",
     "editor.fontLigatures": true,
     "terminal.integrated.fontFamily": "Hack, '华为楷体', monospace",
+    "makefile.launchConfigurations": [
+        {
+            "cwd": "/Users/stone/code/my_demo",
+            "binaryPath": "/Users/stone/code/my_demo/my_demo",
+            "binaryArgs": []
+        },
+        {
+            "cwd": "/Users/stone/code/my_demo",
+            "binaryPath": "/Users/stone/code/my_demo/myprogram",
+            "binaryArgs": []
+        }
+    ],
 }
