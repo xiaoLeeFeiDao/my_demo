@@ -38,6 +38,6 @@ void Test45()
     cout << *(uintptr_t*)((uintptr_t*)*(uintptr_t*)&st + 1) << endl;
     Person *p = nullptr;
     p->MyPrint();
- 45_虚继承内部原理.cpp   cout << "world" << endl;
+    cout << "world" << endl;
     return;
 }

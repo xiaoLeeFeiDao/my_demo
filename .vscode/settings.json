@@ -1,4 +1,6 @@
 {
+    // "files.encoding": "gb2312",
+    "files.encoding": "utf8",
     "files.associations": {
         "cstdio": "cpp",
         "ostream": "cpp",
@@ -23,7 +25,9 @@
     "C_Cpp.vcFormat.indent.preserveWithinParentheses": false,
     // "C_Cpp.default.compilerPath": "C:\\cygwin64\bin\\g++.exe",
     // "C_Cpp.default.compilerPath": "C:\\SysGCC\\arm-eabi\\bin\\g++.exe",
-    "debug.allowBreakpointsEverywhere": true,
+    // "C_Cpp.default.compilerPath": "C:\\msys64\\usr\\bin\\g++.exe",
+    // "C_Cpp.default.compilerPath": "/usr/bin/g++",
+    "C_Cpp.errorSquiggles": "disabled",
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
     "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
@@ -53,20 +57,33 @@
         },
         "MacOSBash": {
             "source": "Git Bash"
+        },
+        "Mingw32 MSYS2": {
+            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+            "args": [
+                "--login",
+                "-i"
+            ],
+            "env": {
+                "MSYSTEM": "MINGW32",
+                "CHERE_INVOKING": "1"
+            },
+            "icon": "terminal-bash"
         }
     },
+    "terminal.integrated.defaultProfile.windows": "Mingw32 MSYS2",
     // "terminal.integrated.defaultProfile.windows": "cygwin",
-    "terminal.integrated.defaultProfile.windows": "Command Prompt",
+    // "terminal.integrated.defaultProfile.windows": "GitBash",
     // "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "files.encoding": "utf8",
-    // "files.encoding": "gb2312",
-    // "window.zoomLevel": 0.0, // 调整窗口的缩放级�?
-    "window.zoomLevel": 0,
+    "terminal.integrated.env.windows": {
+        "CHERE_INVOKING": "1",
+        "MSYSTEM": "MINGW64",
+    },
+    "terminal.integrated.fontFamily": "MesloLGS NF",
     // --------------- cmake config ------------------------------------------
     // "cmake.sourceDirectory": "d:/code/test_win11",
-    "cmake.sourceDirectory": "${workspaceFolder}/.",
-    // "cmake.sourceDirectory": "${workspaceFolder}/.",
-    // "cmake.cacheInit": "build", // 
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    // "cmake.cacheInit": "build",
     "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.outputLogEncoding": "UTF-8",
     // "cmake.outputLogEncoding": "GBK",
@@ -83,7 +100,7 @@
     // "cmake.sourceDirectory": "/cygdrive/d/code/test_win11",
     // "cmake.sourceDirectory": "D:/code/test_win11",
     // "cmake.outputLogEncoding": "gbk",
-    // "cmake.buildTask": false, // 设置为true表示将从tasks.json进�?�build，编译过程在终�??展示而不�?输出�?展示
+    // "cmake.buildTask": false,
     // "cmake.configureOnOpen": true,
     // "cmake.platform": "Unix Makefiles",
     // "cmake.generator": "MinGW Makefiles",
@@ -92,21 +109,11 @@
     // "cmake.cacheInit": "/cygdrive/d/code/test_win11/build",
     // "cmake.buildDirectory": "${workspaceFolder}/build",
     "cmake.configureOnOpen": true,
-    "C_Cpp.errorSquiggles": "disabled",
     // "cmake.cmakePath": "C:\\msys64\\usr\\bin\\cmake.exe",
     // "cmake.cmakePath": "/opt/homebrew/bin/cmake",
     // "cmake.cmakePath": "/usr/bin/cmake",
-    "terminal.integrated.env.windows": {
-        "CHERE_INVOKING": "1",
-        "MSYSTEM": "MINGW64",
-    },
-    // "C_Cpp.default.compilerPath": "C:\\msys64\\usr\\bin\\g++.exe",
-    "C_Cpp.default.compilerPath": "/usr/bin/g++",
-    // "editor.fontFamily": "'Fira Code', 'FiraCode-Retina', 'FiraCode-Light', 'FiraCode-Medium', 'FiraCode-Bold'",
-    // "editor.fontFamily":"'FiraCode-Retina', '华为楷体', monospace",
-    "editor.fontFamily": "Hack, '华为楷体', monospace",
     "editor.fontLigatures": true,
-    "terminal.integrated.fontFamily": "Hack, '华为楷体', monospace",
+    "editor.fontFamily": "Fira Code,'华文楷体',Hack",
     "makefile.launchConfigurations": [
         {
             "cwd": "/Users/stone/code/my_demo",
@@ -119,4 +126,7 @@
             "binaryArgs": []
         }
     ],
+    // "window.zoomLevel": 0.0,
+    "window.zoomLevel": 0,
+    "debug.allowBreakpointsEverywhere": true,
 }
