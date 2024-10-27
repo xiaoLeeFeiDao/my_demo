@@ -1,0 +1,71 @@
+@echo off
+SETLOCAL
+
+IF "%1"=="cygwin" (
+    echo "Detected Cygwin"
+    setx C_COMPILER_FOR_TASK "/usr/bin/gcc"
+    setx CXX_COMPILER_FOR_TASK "/usr/bin/g++"
+    setx C_COMPILER "C:/cygwin64/bin/gcc.exe"
+    setx CXX_COMPILER "C:/cygwin64/bin/g++.exe"
+    setx workspace_dir "/cygdrive/d/code/learn_platform"
+    setx cmake_path "C:/cygwin64/bin/cmake.exe"
+    setx build_dir_name "build_cygwin"
+    setx default_shell "C:/cygwin64/bin/bash.exe"
+    setx login_opt "-c"
+    setx default_env_name "cygwin"
+    setx executableExtension ".exe"
+    setx cmakeGenerator "Unix Makefiles"
+
+    set C_COMPILER_FOR_TASK = "/usr/bin/gcc"
+    set CXX_COMPILER_FOR_TASK = "/usr/bin/g++"
+    set C_COMPILER = "C:/cygwin64/bin/gcc.exe"
+    set CXX_COMPILER = "C:/cygwin64/bin/g++.exe"
+    set workspace_dir = "/cygdrive/d/code/learn_platform"
+    set cmake_path = "C:/cygwin64/bin/cmake.exe"
+    set build_dir_name = "build_cygwin"
+    set default_shell = "C:/cygwin64/bin/bash.exe"
+    set login_opt = "-c"
+    set default_env_name = "cygwin"
+    set executableExtension = ".exe"
+    set cmakeGenerator = "Unix Makefiles"
+) ELSE IF "%1"=="mingw" (
+    echo "Detected MinGW"
+    setx C_COMPILER_FOR_TASK "C:/msys64/mingw32/bin/gcc.exe"
+    setx CXX_COMPILER_FOR_TASK "C:/msys64/mingw32/bin/g++.exe"
+    setx C_COMPILER "C:/msys64/mingw32/bin/gcc.exe"
+    setx CXX_COMPILER "C:/msys64/mingw32/bin/g++.exe"
+    setx make_dir "C:/msys64/mingw32/bin/mingw32-make.exe"
+    setx workspace_dir "D:/code/learn_platform"
+    setx cmake_path "C:/Program Files/CMake/bin/cmake.exe"
+    setx build_dir_name "build_mingw"
+    setx default_shell "C:/msys64/usr/bin/bash.exe"
+    setx login_opt "-c"
+    setx default_env_name "mingw"
+    setx executableExtension ".exe"
+    setx cmakeGenerator "MinGW Makefiles"
+
+    set C_COMPILER_FOR_TASK = "C:/msys64/mingw32/bin/gcc.exe"
+    set CXX_COMPILER_FOR_TASK = "C:/msys64/mingw32/bin/g++.exe"
+    set C_COMPILER = "C:/msys64/mingw32/bin/gcc.exe"
+    set CXX_COMPILER = "C:/msys64/mingw32/bin/g++.exe"
+    set make_dir = "C:/msys64/mingw32/bin/mingw32-make.exe"
+    set workspace_dir = "D:/code/learn_platform"
+    set cmake_path = "C:/Program Files/CMake/bin/cmake.exe"
+    set build_dir_name = "build_mingw"
+    set default_shell = "C:/msys64/usr/bin/bash.exe"
+    set login_opt = "-c"
+    set default_env_name = "mingw"
+    set executableExtension = ".exe"
+    set cmakeGenerator = "MinGW Makefiles"
+) ELSE (
+    echo Invalid argument. Use 'cygwin' or 'mingw'.
+    exit /B 1
+)
+
+echo "C_COMPILER: %C_COMPILER%"
+echo "CXX_COMPILER: %CXX_COMPILER%"
+echo "workspace_dir: %workspace_dir%"
+echo "cmake_path: %cmake_path%"
+echo "executableExtension: %executableExtension%"
+echo "cmakeGenerator: %cmakeGenerator%"
+ENDLOCAL

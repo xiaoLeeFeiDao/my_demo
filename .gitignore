@@ -1,4 +1,8 @@
 build
+build_cygwin
+build_mingw
+cygwin_bin
+mingw_bin
 cmake-build-debug
 Debug
 *.log

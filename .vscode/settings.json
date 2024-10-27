@@ -1,4 +1,5 @@
 {
+    // ***************** files config *********************
     // "files.encoding": "gb2312",
     "files.encoding": "utf8",
     "files.associations": {
@@ -15,6 +16,8 @@
         "string_view": "cpp",
         "bitset": "cpp"
     },
+
+    // ****************** c_cpp config ********************
     "C_Cpp.clang_format_path": "Microsoft",
     "C_Cpp.clang_format_style": "Visual Studio",
     "C_Cpp.vcFormat.indent.accessSpecifiers": true,
@@ -28,16 +31,14 @@
     // "C_Cpp.default.compilerPath": "C:\\msys64\\usr\\bin\\g++.exe",
     // "C_Cpp.default.compilerPath": "/usr/bin/g++",
     "C_Cpp.errorSquiggles": "disabled",
-    "editor.cursorStyle": "line",
-    "editor.lineNumbers": "on",
-    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
-    "editor.wordWrap": "off",
+
+    // ******************* terminal config ********************
     "terminal.integrated.profiles.windows": {
         "cygwin": {
             "path": "C:\\cygwin64\\bin\\bash.exe",
             "env": {
-                // "HOME": "${workspaceFolder}", // 错�??：不�?持win风格�?�?
-                "CHERE_INVOKING": "1" // cygwin默�?�执�?/etc/profile以�?�查环境变量CHERE_INVOKING，�?�果设置，则禁�?�更改目录到$HOME�?
+                // "HOME": "${workspaceFolder}",
+                "CHERE_INVOKING": "1"
             },
             "icon": "terminal-bash",
             "args": [
@@ -52,14 +53,11 @@
             "args": [],
             "icon": "terminal-cmd"
         },
-        "GitBash": {
-            "source": "Git Bash"
-        },
         "MacOSBash": {
             "source": "Git Bash"
         },
-        "Mingw32 MSYS2": {
-            "path": "C:\\msys64\\usr\\bin\\bash.exe",
+        "mingw": {
+            "path": "C:/msys64/usr/bin/bash.exe",
             "args": [
                 "--login",
                 "-i"
@@ -71,49 +69,44 @@
             "icon": "terminal-bash"
         }
     },
-    "terminal.integrated.defaultProfile.windows": "Mingw32 MSYS2",
-    // "terminal.integrated.defaultProfile.windows": "cygwin",
-    // "terminal.integrated.defaultProfile.windows": "GitBash",
+    // "terminal.integrated.defaultProfile.windows": "${env:vscode_default_terminal_name}",
+    "terminal.integrated.defaultProfile.windows": "cygwin",
+    // "terminal.integrated.defaultProfile.windows": "mingw",
     // "terminal.integrated.defaultProfile.windows": "PowerShell",
+
+    // ************ cmaketools config mingw64 ******************
+    // "terminal.integrated.env.windows": {
+    //     "CHERE_INVOKING": "1",
+    //     "MSYSTEM": "MINGW64",
+    // },
+
+    // ************ cmaketools config cygwin ******************
     "terminal.integrated.env.windows": {
-        "CHERE_INVOKING": "1",
-        "MSYSTEM": "MINGW64",
+        "CC": "/usr/bin/gcc",
+        "CXX": "/usr/bin/g++"
     },
-    "terminal.integrated.fontFamily": "MesloLGS NF",
-    // --------------- cmake config ------------------------------------------
-    // "cmake.sourceDirectory": "d:/code/test_win11",
-    "cmake.sourceDirectory": "${workspaceFolder}",
-    // "cmake.cacheInit": "build",
-    "cmake.buildDirectory": "${workspaceFolder}/build",
-    "cmake.outputLogEncoding": "UTF-8",
-    // "cmake.outputLogEncoding": "GBK",
-    // "cmake.configureArgs": [],
-    // "cmake.cmakePath": "/usr/bin/cmake",
-    // "cmake.cmakePath": "/usr/bin/cmake",
-    // "cmake.cmakePath": "C:\\Program Files\\CMake\\bin\\cmake.exe",
-    // "cmake.cmakePath": "C:\\msys64\\usr\\bin\\cmake.exe",
-    // "cmake.cmakePath": "/opt/homebrew/bin/cmake",
-    // "cmake.cmakePath": "/usr/bin/cmake",
-    //"cmake.cmakePath": "/usr/sbin/cmake",
-    // "cmake.mingwSearchDirs": [],
-    // "cmake.buildDirectory": "build",
-    // "cmake.sourceDirectory": "/cygdrive/d/code/test_win11",
-    // "cmake.sourceDirectory": "D:/code/test_win11",
-    // "cmake.outputLogEncoding": "gbk",
-    // "cmake.buildTask": false,
-    // "cmake.configureOnOpen": true,
-    // "cmake.platform": "Unix Makefiles",
-    // "cmake.generator": "MinGW Makefiles",
-    // "cmake.generator": "Unix Makefiles",
-    // "cmake.cacheInit": "d:/code/test_win11/build"
-    // "cmake.cacheInit": "/cygdrive/d/code/test_win11/build",
-    // "cmake.buildDirectory": "${workspaceFolder}/build",
-    "cmake.configureOnOpen": true,
-    // "cmake.cmakePath": "C:\\msys64\\usr\\bin\\cmake.exe",
-    // "cmake.cmakePath": "/opt/homebrew/bin/cmake",
-    // "cmake.cmakePath": "/usr/bin/cmake",
+    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font','Fira Code','华文楷体'",
+
+    // ******************* cmake config *****************************
+    "cmake.cmakePath": "C:/cygwin64/bin/cmake.exe",
+    "cmake.generator": "Unix Makefiles",
+    "cmake.configureArgs": [
+        "-DCMAKE_BUILD_TYPE=Debug",
+        "-DCMAKE_EXPORT_COMPILE_COMMANDS=TRUE",
+        "--no-warn-unused-cli"
+    ],
+    "cmake.sourceDirectory": "D:/code/test_win11",
+    "cmake.buildDirectory": "/cygdrive/d/code/test_win11/build",
+
+    // ********************** editor ***********************
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Fira Code,'华文楷体',Hack",
+    "editor.fontFamily": "'Fira Code','华文楷体'",
+    "editor.fontSize": 16,
+    "editor.cursorStyle": "line",
+    "editor.lineNumbers": "on",
+    "editor.wordSeparators": "/\\()\"':,.;<>~!@#$%^&*|+=[]{}`?-",
+    "editor.wordWrap": "off",
+    // ********************* makefile *********************
     "makefile.launchConfigurations": [
         {
             "cwd": "/Users/stone/code/my_demo",

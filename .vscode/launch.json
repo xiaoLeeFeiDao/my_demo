@@ -1,25 +1,17 @@
 {
     "configurations": [
         {
-            "type": "cmake",
-            "request": "launch",
-            "name": "CMake: 配置项目",
-            "cmakeDebugType": "configure",
-            "clean": false,
-            "configureAll": false
-        },
-        {
-            "name": "mingw64-i686",
+            "name": "mingw",
             "type": "cppdbg",
             "request": "launch",
-            "program": "${workspaceFolder}/bin/test.exe",
+            "program": "${workspaceFolder}/${env:default_env_name}_bin/test.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${fileDirname}",
             "environment": [],
             "externalConsole": false,
             "MIMode": "gdb",
-            // "miDebuggerPath": "C:\\msys64\\mingw32\\bin",
+            "miDebuggerPath": "C:\\msys64\\mingw32\\bin\\gdb.exe",
             "setupCommands": [
                 {
                     "description": "为 gdb 启用整齐打印",
@@ -34,12 +26,58 @@
             ]
         },
         {
-            "type": "lldb",
+            "name": "cygwin",
+            "type": "cppdbg",
             "request": "launch",
-            "name": "popos_Launch",
+            "program": "${workspaceFolder}/${env:default_env_name}_bin/test.exe", // 生成的test目标文件路径
+            "args": [], // 可选的命令行参数
+            "stopAtEntry": false,
+            "cwd": "${workspaceFolder}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "miDebuggerPath": "C:/cygwin64/bin/gdb.exe",
+            "setupCommands": [
+                {
+                    "description": "启用调试模式",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                }
+            ],
+            "internalConsoleOptions": "openOnSessionStart"
+        },
+        {
+            "name": "ubuntu",
+            "type": "cppdbg",
+            "request": "launch",
             "program": "${workspaceFolder}/bin/test",
             "args": [],
-            "cwd": "${workspaceFolder}"
+            "stopAtEntry": false,
+            "cwd": "${fileDirname}",
+            "environment": [],
+            "externalConsole": false,
+            "MIMode": "gdb",
+            "setupCommands": [
+                {
+                    "description": "为 gdb 启用整齐打印",
+                    "text": "-enable-pretty-printing",
+                    "ignoreFailures": true
+                },
+                {
+                    "description": "将反汇编风格设置为 Intel",
+                    "text": "-gdb-set disassembly-flavor intel",
+                    "ignoreFailures": true
+                }
+            ]
+        },
+        {
+            "name": "local-js",
+            "program": "${workspaceFolder}/app.js",
+            "request": "launch",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "node"
         }
     ]
 }
