@@ -1,3 +1,4 @@
+#include "demo_inner.h"
 #if SUPPORT_OPENSSL_LIB
 #include <stdio.h>
 #include <stdlib.h>
@@ -5,7 +6,6 @@
 #include <openssl/md5.h>
 #include <openssl/evp.h>
 
-#include "demo_inner.h"
 #define MAX_FILENAME_LENGTH 64
 #define DIVING_PILING_FILENAME_CONF "diving_piling_config.mp3"
 #define DIVING_PILING_FILENAME_FREEDIVE "freedive.mp3"

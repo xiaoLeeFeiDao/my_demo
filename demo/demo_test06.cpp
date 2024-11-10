@@ -1,6 +1,6 @@
+#include "demo_inner.h"
 #ifdef SUPPORT_JSON_LIB
 #include "cJSON.h"
-#include "demo_inner.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

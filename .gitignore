@@ -1,6 +1,7 @@
 build
 build_cygwin
 build_mingw
+arch_build
 cygwin_bin
 mingw_bin
 cmake-build-debug
@@ -10,6 +11,6 @@ bin
 .vs
 out
 bin
-iar_build
 .idea
 .gitignore
+lib

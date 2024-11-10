@@ -1,10 +1,10 @@
+#include "demo_inner.h"
 #ifdef SUPPORT_JSON_LIB
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
 #include <dirent.h>
 #include "cJSON.h"
-#include "demo_inner.h"
 // 定义结构体来承载 JSON 数据
 typedef struct {
     char FILE_NAME[256];

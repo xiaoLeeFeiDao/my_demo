@@ -15,7 +15,7 @@ IF "%1"=="cygwin" (
     setx default_env_name "cygwin"
     setx executableExtension ".exe"
     setx cmakeGenerator "Unix Makefiles"
-
+    setx openssl_path ""
     set C_COMPILER_FOR_TASK = "/usr/bin/gcc"
     set CXX_COMPILER_FOR_TASK = "/usr/bin/g++"
     set C_COMPILER = "C:/cygwin64/bin/gcc.exe"

@@ -1,10 +1,10 @@
 #ifndef __CPP_LEARN_INER_H__
 #define __CPP_LEARN_INER_H__
+#include "feature.h"
+
 #ifdef __cplusplus
 extern "C" {
 #endif
-#define FALSE 0
-#define TRUE 1
 #define CONFLICT_ERR_DISPALY FALSE
 void Test01();
 void Test02();

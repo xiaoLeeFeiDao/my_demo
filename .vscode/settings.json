@@ -14,9 +14,9 @@
         "array": "cpp",
         "string": "cpp",
         "string_view": "cpp",
-        "bitset": "cpp"
+        "bitset": "cpp",
+        "feature.h": "c"
     },
-
     // ****************** c_cpp config ********************
     "C_Cpp.clang_format_path": "Microsoft",
     "C_Cpp.clang_format_style": "Visual Studio",
@@ -31,7 +31,6 @@
     // "C_Cpp.default.compilerPath": "C:\\msys64\\usr\\bin\\g++.exe",
     // "C_Cpp.default.compilerPath": "/usr/bin/g++",
     "C_Cpp.errorSquiggles": "disabled",
-
     // ******************* terminal config ********************
     "terminal.integrated.profiles.windows": {
         "cygwin": {
@@ -70,34 +69,61 @@
         }
     },
     // "terminal.integrated.defaultProfile.windows": "${env:vscode_default_terminal_name}",
-    "terminal.integrated.defaultProfile.windows": "cygwin",
+    // "terminal.integrated.defaultProfile.windows": "cygwin",
     // "terminal.integrated.defaultProfile.windows": "mingw",
     // "terminal.integrated.defaultProfile.windows": "PowerShell",
-
     // ************ cmaketools config mingw64 ******************
     // "terminal.integrated.env.windows": {
     //     "CHERE_INVOKING": "1",
     //     "MSYSTEM": "MINGW64",
     // },
-
     // ************ cmaketools config cygwin ******************
     "terminal.integrated.env.windows": {
-        "CC": "/usr/bin/gcc",
-        "CXX": "/usr/bin/g++"
+        // "CC": "/usr/bin/gcc",
+        // "CXX": "/usr/bin/g++"
     },
-    "terminal.integrated.fontFamily": "'JetBrainsMono Nerd Font','Fira Code','华文楷体'",
-
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font','华文楷体'",
     // ******************* cmake config *****************************
-    "cmake.cmakePath": "C:/cygwin64/bin/cmake.exe",
-    "cmake.generator": "Unix Makefiles",
+    // "cmake.generator": "Ninja",
+    // "cmake.cmakePath": "${command:cmake.buildkit.cmake.exe}",
+    // "cmake.preferredGenerators": [
+    //     "Unix Makefiles"
+    // ],
+    // "cmake.configureSettings": {
+    //     "CMAKE_MAKE_PROGRAM": "${command:cmake.buildkit.generator.exe}",
+    //     "CMAKE_VERBOSE_MAKEFILE": false
+    // }
+    // "cmake.generator": "Ninja Multi-Config",
+    // "cmake.cmakePath": "${command:cmake.buildkit.cmake.exe}",
+    // "cmake.preferredGenerators": [
+    //     "Unix Makefiles"
+    // ],
+    // "cmake.configureSettings": {
+    //     "CMAKE_MAKE_PROGRAM": "${command:cmake.buildkit.generator.exe}",
+    //     "CMAKE_VERBOSE_MAKEFILE": false
+    // },
+    // "cmake.cmakePath": "C:/cygwin64/bin/cmake.exe",
+    "cmake.cmakePath": "/usr/bin/cmake",
+    // "cmake.generator": "Unix Makefiles",
+    // "cmake.generator": "${env:cmakeGenerator}",
     "cmake.configureArgs": [
-        "-DCMAKE_BUILD_TYPE=Debug",
-        "-DCMAKE_EXPORT_COMPILE_COMMANDS=TRUE",
-        "--no-warn-unused-cli"
+        //     "-DCMAKE_BUILD_TYPE=Debug",
+        //     "-DCMAKE_EXPORT_COMPILE_COMMANDS=TRUE",
+        // "-DCMAKE_MAKE_PROGRAM=/usr/bin/make",
+        // "-DCMAKE_C_COMPILER=/usr/bin/gcc",
+        // "-DCMAKE_CXX_COMPILER=/usr/bin/g++",
+        //     "-DCMAKE_PREFIX_PATH=/cygwin64/usr",
+        //     "--no-warn-unused-cli"
     ],
-    "cmake.sourceDirectory": "D:/code/test_win11",
-    "cmake.buildDirectory": "/cygdrive/d/code/test_win11/build",
-
+    // "cmake.buildTask": true,
+    // "cmake.sourceDirectory": "D:/code/learn_platform",
+    // "cmake.buildDirectory": "/cygdrive/d/code/learn_platform/build",
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.buildDirectory": "${workspaceFolder}/arch_build",
+    // "cmake.buildDirectory": "${workspaceFolder}/cygwin_build",
+    "cmake.configureEnvironment": {
+        // "SHELL": "C:\\cygwin64\\bin\\bash.exe"
+    },
     // ********************** editor ***********************
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira Code','华文楷体'",

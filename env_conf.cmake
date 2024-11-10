@@ -1,0 +1,12 @@
+
+set(CMAKE_INCLUDE_CURRENT_DIR ON)
+message(STATUS "my system:${CMAKE_HOST_SYSTEM_NAME}")
+if (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "CYGWIN")
+    set(CMAKE_MAKE_PROGRAM "/cygdrive/c/cygwin64/bin/make")
+    set(CMAKE_C_COMPILER "/cygdrive/c/cygwin64/bin/gcc")
+    set(CMAKE_CXX_COMPILER "/cygdrive/c/cygwin64/bin/g++")
+elseif (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Linux")
+    set(CMAKE_MAKE_PROGRAM "/usr/bin/make")
+    set(CMAKE_C_COMPILER "/usr/bin/gcc")
+    set(CMAKE_CXX_COMPILER "/usr/bin/g++")
+endif()

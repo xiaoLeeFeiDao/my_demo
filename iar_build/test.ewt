@@ -2371,158 +2371,164 @@
     </configuration>
     <group>
         <name>cpp_learn</name>
+        <group>
+            <name>include</name>
+            <file>
+                <name>$PROJ_DIR$\..\cpp_learn\include\cpp_learn.h</name>
+            </file>
+        </group>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\01_c++书写HelloWorld.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\01_helloworld.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\02_双冒号作用域运算符.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\02_scope_resolution.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\03_命名空间.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\03_namespace.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\04_using声明和using编译指令.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\04_using_declear_using_compile_order.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\05_c++对c语言的增强_c++语言.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\05_c++_enhance_c_at_c++.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\05_c++对c语言的增强_c语言.c</name>
+            <name>$PROJ_DIR$\..\cpp_learn\05_c++_enhance_c_at_c.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\06_c++对c语言的增强-const增强.c</name>
+            <name>$PROJ_DIR$\..\cpp_learn\06_c++_enhance_c_at_const.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\07_const在C语言下默认是外部链接属性.c</name>
+            <name>$PROJ_DIR$\..\cpp_learn\07_const_default_out_linker_at_c.c</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\cpp_learn\07_test4c.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\08_const在c++语言下默认是内部链接属性.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\08_const_default_inner_linker_at_c++.cpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\cpp_learn\08_test4cpp.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\09_const分配内存情况.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\09_const_mem_malloc.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\10_引用的基本语法.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\10_reference_base_using.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\11_引用--参数的传递方式.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\11_reference_args_pass_method.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\12_指针的引用.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\12_pointer_reference.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\13_常量的引用.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\13_const_value_reference.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\14_内联函数.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\14_inner_func.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\15_函数的默认参数及占位参数.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\15_func_default_arg_and_place_holder.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\16_函数的重载.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\16_func_overload.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\17_封装.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\17_encapsulation.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\18_构造和析构.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\18_construct_and_disstruct.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\19_构造函数的调用规则.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\19_construct_called_ruler.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\20_深拷贝和浅拷贝.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\20_depth_and_shallow_copy.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\21_初始化列表.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\21_init_list.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\22_类对象作为类成员.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\22_clash_obj_as_class_memb.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\23_new运算符.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\23_new_operator.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\24_静态变量成员属性.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\24_static_memb_attr.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\25_单例模式.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\25_single_mode.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\26_打印机单例模式.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\26_printer_single_mode.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\27_对象模型初探.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\27_introduction_to_object_models.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\28_this指针.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\28_this_pointer.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\29_空指针访问成员函数.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\29_null_pointer_visit_memb_func.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\30_常函数和常对象.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\30_const_func_and_const_obj.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\31_友元函数.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\31_friend_func.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\32_加号运符重载.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\32_overloading_plus_operator.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\33_递增运算符重载.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\33_overloading_increment_operator.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\34_指针运算符的重载.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\34_overloading_pointer_operator.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\35_赋值运算符重载.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\35_overloading_assignment_operator.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\36_关系运算符重载.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\36_overloading_relational_operators.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\37_函数调用运算符重载.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\37_function_call_operator_overload.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\38_继承.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\38_inheritance.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\39_继承中的对象模型.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\39_inheritance_object_model.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\40_继承中的构造和析构.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\40_inheritance_constructors_and_destructors.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\41_继承中的同名成员处理.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\41_inheritance_handling_same_name_members.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\42_继承中静态成员的处理.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\42_inheritance_static_members_handling.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\43_多继承的概念以及问题.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\43_multiple_inheritance_concepts_and_issues.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\44_菱形继承与虚继承.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\44_diamond_inheritance_and_virtual_inheritance.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\45_虚继承内部原理.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\45_virtual_inheritance_internal_mechanism.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\46_函数模板和普通函数的区别 .cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\46_func_template_and_normal_func_diff.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\47_静态联编和动态联编.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\47_static_binding_and_dynamic_binding.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\48_类模板.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\48_class_template.cpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\cpp_learn\cpp_learn.cpp</name>
@@ -2531,13 +2537,13 @@
             <name>$PROJ_DIR$\..\cpp_learn\cpp_learn_inner.h</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\eg1_设计一个类，求圆的周长.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\eg1_design_a_class_to_calculate_circle_perimeter.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\eg2_设计一个学生类.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\eg2_design_a_student_class.cpp</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\cpp_learn\eg3_设置一个person类-属性方法访问权限.cpp</name>
+            <name>$PROJ_DIR$\..\cpp_learn\eg3_property_and_method_access.cpp</name>
         </file>
         <file>
             <name>$PROJ_DIR$\..\cpp_learn\eg4_set_cube_class.cpp</name>
@@ -2572,6 +2578,12 @@
     </group>
     <group>
         <name>demo</name>
+        <group>
+            <name>include</name>
+            <file>
+                <name>$PROJ_DIR$\..\demo\include\demo.h</name>
+            </file>
+        </group>
         <file>
             <name>$PROJ_DIR$\..\demo\demo.cpp</name>
         </file>

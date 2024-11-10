@@ -1,35 +1,29 @@
-find_package(OpenSSL REQUIRED)
 
-find_path(
-  CJSON_INCLUDE_DIR cJSON.h
-  # 你的头文件可能在这个路径下
-  PATHS /usr/local/include /usr/include/cjson
-  # 你的头文件可能在这个子目录下
-  PATH_SUFFIXES cJSON)
-message(STATUS "cJSON include dir:${CJSON_INCLUDE_DIR}")
-# 如果找到头文件，则添加include目录
-if(CJSON_INCLUDE_DIR)
-  include_directories(${CJSON_INCLUDE_DIR})
+if (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "CYGWIN")
+    set(CMAKE_EXE_LINKER_FLAGS "-static") ## 减少对动态库的依赖
+    set(JsonCpp_INCLUDE_DIR "/usr/local/include/json;C:\\cygwin64\\usr\\local\\include\\json")
+    set(JsonCpp_LIBRARIES "/usr/local/lib/libjsoncpp.a;C:\\cygwin64\\usr\\local\\lib\\libjsoncpp.a")
+    include_directories(${JsonCpp_INCLUDE_DIR})
+
+    set(CJSON_INCLUDE_DIR "/usr/local/include/cjson;C:\\cygwin64\\usr\\local\\include\\cjson")
+    set(CJSON_LIBRARY "/usr/local/lib/libcjson.so;C:\\cygwin64\\usr\\local\\lib\\libcjson.so")
+    include_directories(${CJSON_INCLUDE_DIR})
+
+    set(OPENSSL_ROOT_DIR "/usr/local/openssl;C:/cygwin64/usr/local/openssl/")
+    set(OPENSSL_INCLUDE_DIR "/usr/local/openssl/include;C:/cygwin64/usr/local/openssl/include")
+    set(OPENSSL_LIBRARIES "C:/cygwin64/usr/local/openssl/lib/libssl.a;C:/cygwin64/usr/local/openssl/lib/libcrypto.a;")
+    include_directories(${OPENSSL_INCLUDE_DIR})
+elseif (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Linux")
+    set(JsonCpp_INCLUDE_DIR "/usr/local/include/json")
+    set(JsonCpp_LIBRARIES "/usr/local/lib/libjsoncpp.a")
+    include_directories(${JsonCpp_INCLUDE_DIR})
+
+    set(CJSON_INCLUDE_DIR "/usr/local/include/cjson")
+    set(CJSON_LIBRARY "/usr/local/lib/libcjson.a")
+    include_directories(${CJSON_INCLUDE_DIR})
+
+    set(OPENSSL_ROOT_DIR "/usr/openssl")
+    set(OPENSSL_INCLUDE_DIR "/usr/openssl/include")
+    set(OPENSSL_LIBRARIES "/usr/lib/libssl.so;/usr/lib/libcrypto.so")
+    include_directories(${OPENSSL_INCLUDE_DIR})
 endif()
-find_package(cjson REQUIRED)
-message(STATUS "cJSON libraries: ${CJSON_LIBRARIES}")
-
-message(STATUS "cur src dir:${CMAKE_CURRENT_SOURCE_DIR}")
-
-# target_include_directories(${PROJECT_NAME} PRIVATE ${jsoncpp_INCLUDE_DIRS})
-if(NOT CMAKE_HOST_SYSTEM_NAME STREQUAL "Darwin")
-  find_path(
-    JSONCPP_INCLUDE_DIR json.h
-    PATHS /opt/homebrew/Cellar/jsoncpp/1.9.5/include /usr/include/jsoncpp
-    PATH_SUFFIXES json)
-  message(STATUS "jsoncpp include dir:${JSONCPP_INCLUDE_DIR}")
-  if(JSONCPP_INCLUDE_DIR)
-    include_directories(JSONCPP_INCLUDE_DIR)
-  endif()
-  find_package(jsoncpp REQUIRED)
-else()
-  list(APPEND CMAKE_PREFIX_PATH "/opt/homebrew/Cellar")
-  # 从 CURRENT_SRC_LIST 中移除 demo_test07.cpp 文件
-  list(REMOVE_ITEM CURRENT_SRC_LIST "demo/demo_test07.cpp")
-endif()
-message(STATUS "cur src list:${CURRENT_SRC_LIST}")

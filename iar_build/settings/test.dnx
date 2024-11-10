@@ -16,7 +16,7 @@
         <ShowSource>1</ShowSource>
     </Trace1>
     <DebugChecksum>
-        <Checksum>3891374034</Checksum>
+        <Checksum>2012418874</Checksum>
     </DebugChecksum>
     <CodeCoverage>
         <Enabled>_ 0</Enabled>
@@ -73,9 +73,10 @@
         <mode>0</mode>
     </DisassembleMode>
     <Breakpoints2>
-        <Bp0>_ 1 "STD_CODE2" "{$PROJ_DIR$\..\cpp_learn\45_虚继承内部原理.cpp}.34.13" 0 0 1 "" 0 ""</Bp0>
+        <Bp0>_ 0 "STD_CODE2" "{$PROJ_DIR$\..\cpp_learn\45_虚继承内部原理.cpp}.34.13" 0 0 1 "" 0 ""</Bp0>
         <Bp1>_ 1 "STD_CODE2" "{$PROJ_DIR$\..\main.cpp}.6.3" 0 0 1 "" 0 ""</Bp1>
-        <Count>2</Count>
+        <Bp2>_ 1 "STD_CODE2" "{$PROJ_DIR$\..\cpp_learn\46_func_template_and_normal_func_diff.cpp}.41.5" 0 0 1 "" 0 ""</Bp2>
+        <Count>3</Count>
     </Breakpoints2>
     <Interrupts>
         <Enabled>1</Enabled>

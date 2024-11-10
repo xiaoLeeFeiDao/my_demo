@@ -1,14 +1,15 @@
 #ifndef __DEMO_INNER_H__
 #define __DEMO_INNER_H__
-#define SUPPORT_OPENSSL_LIB FALSE
-#define SUPPORT_JSON_LIB FALSE
+#include "feature.h"
+#define SUPPORT_OPENSSL_LIB TRUE
+#define SUPPORT_JSON_LIB TRUE
 #ifdef __cplusplus
 extern "C" {
 #endif
 void DemoTest01();
 void DemoTest02();
 void DemoTest03();
-#if (SUPPROT_OPENSSL_LIB)
+#if (SUPPORT_OPENSSL_LIB)
 void DemoTest04();
 #endif
 #if(SUPPORT_JSON_LIB)
