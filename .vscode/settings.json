@@ -18,7 +18,7 @@
         "feature.h": "c"
     },
     // ****************** c_cpp config ********************
-    "C_Cpp.clang_format_path": "Microsoft",
+    "C_Cpp.clang_format_path": "/usr/bin/clang-format",
     "C_Cpp.clang_format_style": "Visual Studio",
     "C_Cpp.vcFormat.indent.accessSpecifiers": true,
     "C_Cpp.vcFormat.indent.braces": true,
@@ -82,7 +82,7 @@
         // "CC": "/usr/bin/gcc",
         // "CXX": "/usr/bin/g++"
     },
-    "terminal.integrated.fontFamily": "'FiraCode Nerd Font','华文楷体'",
+    "terminal.integrated.fontFamily": "'FiraCode Nerd Font','DejaVu Sans Mono','华文楷体'",
     // ******************* cmake config *****************************
     // "cmake.generator": "Ninja",
     // "cmake.cmakePath": "${command:cmake.buildkit.cmake.exe}",
@@ -106,6 +106,8 @@
     "cmake.cmakePath": "/usr/bin/cmake",
     // "cmake.generator": "Unix Makefiles",
     // "cmake.generator": "${env:cmakeGenerator}",
+    "editor.bracketPairColorization.enabled": true,
+    "editor.guides.bracketPairs": true,
     "cmake.configureArgs": [
         //     "-DCMAKE_BUILD_TYPE=Debug",
         //     "-DCMAKE_EXPORT_COMPILE_COMMANDS=TRUE",
