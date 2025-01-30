@@ -82,32 +82,15 @@
         // "CC": "/usr/bin/gcc",
         // "CXX": "/usr/bin/g++"
     },
-    "terminal.integrated.fontFamily": "'FiraCode Nerd Font','DejaVu Sans Mono','华文楷体'",
+    // "terminal.integrated.fontFamily": "'FiraCode Nerd Font','DejaVu Sans Mono','华文楷体'",
+    "terminal.integrated.fontFamily": "Cascadia Code PL",
     // ******************* cmake config *****************************
-    // "cmake.generator": "Ninja",
-    // "cmake.cmakePath": "${command:cmake.buildkit.cmake.exe}",
-    // "cmake.preferredGenerators": [
-    //     "Unix Makefiles"
-    // ],
-    // "cmake.configureSettings": {
-    //     "CMAKE_MAKE_PROGRAM": "${command:cmake.buildkit.generator.exe}",
-    //     "CMAKE_VERBOSE_MAKEFILE": false
-    // }
-    // "cmake.generator": "Ninja Multi-Config",
-    // "cmake.cmakePath": "${command:cmake.buildkit.cmake.exe}",
-    // "cmake.preferredGenerators": [
-    //     "Unix Makefiles"
-    // ],
-    // "cmake.configureSettings": {
-    //     "CMAKE_MAKE_PROGRAM": "${command:cmake.buildkit.generator.exe}",
-    //     "CMAKE_VERBOSE_MAKEFILE": false
-    // },
+    // "cmake.cmakePath": "/usr/bin/cmake",
+    "cmake.cmakePath": "/opt/homebrew/bin/cmake",
     // "cmake.cmakePath": "C:/cygwin64/bin/cmake.exe",
-    "cmake.cmakePath": "/usr/bin/cmake",
-    // "cmake.generator": "Unix Makefiles",
-    // "cmake.generator": "${env:cmakeGenerator}",
     "editor.bracketPairColorization.enabled": true,
     "editor.guides.bracketPairs": true,
+    "cmake.generator": "Unix Makefiles",
     "cmake.configureArgs": [
         //     "-DCMAKE_BUILD_TYPE=Debug",
         //     "-DCMAKE_EXPORT_COMPILE_COMMANDS=TRUE",
