@@ -340,11 +340,9 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>D:\code\learn_platform</state>
-                    <state>D:\code\learn_platform\cpp_learn</state>
-                    <state>D:\code\learn_platform\cpp_learn\include</state>
-                    <state>D:\code\learn_platform\demo</state>
-                    <state>D:\code\learn_platform\demo\include</state>
+                    <state>c:\code\my_demo</state>
+                    <state>c:\code\my_demo\cpp_learn</state>
+                    <state>c:\code\my_demo\cpp_learn\include</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -2248,31 +2246,13 @@
             <name>$PROJ_DIR$\..\cpp_learn\game2.h</name>
         </file>
     </group>
-    <group>
-        <name>demo</name>
-        <group>
-            <name>include</name>
-            <file>
-                <name>$PROJ_DIR$\..\demo\include\demo.h</name>
-            </file>
-        </group>
-        <file>
-            <name>$PROJ_DIR$\..\demo\demo.cpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\demo\demo_inner.h</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\demo\demo_test01.cpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\demo\demo_test02.cpp</name>
-        </file>
-        <file>
-            <name>$PROJ_DIR$\..\demo\demo_test03.cpp</name>
-        </file>
-    </group>
+    <file>
+        <name>$PROJ_DIR$\..\feature.h</name>
+    </file>
     <file>
         <name>$PROJ_DIR$\..\main.cpp</name>
+    </file>
+    <file>
+        <name>$PROJ_DIR$\..\main.h</name>
     </file>
 </project>

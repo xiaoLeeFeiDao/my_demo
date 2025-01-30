@@ -1,5 +1,5 @@
 #include "demo_inner.h"
-#ifdef SUPPORT_JSON_LIB
+#if SUPPORT_JSON_LIB
 #include "cJSON.h"
 #include <stdio.h>
 #include <stdlib.h>

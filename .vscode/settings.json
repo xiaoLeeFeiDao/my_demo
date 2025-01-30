@@ -121,12 +121,13 @@
     // "cmake.sourceDirectory": "D:/code/learn_platform",
     // "cmake.buildDirectory": "/cygdrive/d/code/learn_platform/build",
     "cmake.sourceDirectory": "${workspaceFolder}",
-    "cmake.buildDirectory": "${workspaceFolder}/arch_build",
+    "cmake.buildDirectory": "${workspaceFolder}/build",
     // "cmake.buildDirectory": "${workspaceFolder}/cygwin_build",
     "cmake.configureEnvironment": {
         // "SHELL": "C:\\cygwin64\\bin\\bash.exe"
     },
     // ********************** editor ***********************
+    // "editor.fontLigatures": "'liga', 'calt'",
     "editor.fontLigatures": true,
     "editor.fontFamily": "Fira Code,'华文楷体',Hack",
     "editor.fontSize": 16,
@@ -150,4 +151,14 @@
     // "window.zoomLevel": 0.0,
     "window.zoomLevel": 0,
     "debug.allowBreakpointsEverywhere": true,
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "scope": "entity.name.function.cpp",
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            }
+        ]
+    },
 }

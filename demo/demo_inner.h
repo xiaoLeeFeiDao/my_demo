@@ -1,8 +1,8 @@
 #ifndef __DEMO_INNER_H__
 #define __DEMO_INNER_H__
 #include "feature.h"
-#define SUPPORT_OPENSSL_LIB TRUE
-#define SUPPORT_JSON_LIB TRUE
+#define SUPPORT_OPENSSL_LIB FALSE
+#define SUPPORT_JSON_LIB FALSE
 #ifdef __cplusplus
 extern "C" {
 #endif

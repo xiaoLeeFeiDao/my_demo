@@ -24,6 +24,7 @@ elseif (${CMAKE_HOST_SYSTEM_NAME} STREQUAL "Linux")
 
     set(OPENSSL_ROOT_DIR "/usr/openssl")
     set(OPENSSL_INCLUDE_DIR "/usr/openssl/include")
-    set(OPENSSL_LIBRARIES "/usr/lib/libssl.so;/usr/lib/libcrypto.so")
+    # set(OPENSSL_LIBRARIES "/usr/lib/x86_64-linux-gnu/libssl.so;/usr/lib/libcrypto.so")
+    find_library(OPENSSL_LIBRARIES NAMES ssl PATHS /usr/lib/x86_64-linux-gnu /usr/local/lib)
     include_directories(${OPENSSL_INCLUDE_DIR})
 endif()
