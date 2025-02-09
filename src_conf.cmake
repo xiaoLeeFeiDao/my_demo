@@ -3,7 +3,7 @@ set(CMAKE_INCLUDE_CURRENT_DIR ON)
 # 添加源文件
 aux_source_directory(. CURRENT_SRC_LIST)
 aux_source_directory(cpp_learn CURRENT_SRC_LIST)
-aux_source_directory(demo CURRENT_SRC_LIST)
+# aux_source_directory(demo CURRENT_SRC_LIST)
 
 # 创建可执行文件
 add_executable(${PROJECT_NAME} ${CURRENT_SRC_LIST})
