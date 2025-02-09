@@ -103,7 +103,7 @@
     //     "CMAKE_VERBOSE_MAKEFILE": false
     // },
     // "cmake.cmakePath": "C:/cygwin64/bin/cmake.exe",
-    "cmake.cmakePath": "/usr/bin/cmake",
+    // "cmake.cmakePath": "/usr/bin/cmake",
     // "cmake.generator": "Unix Makefiles",
     // "cmake.generator": "${env:cmakeGenerator}",
     "editor.bracketPairColorization.enabled": true,
@@ -161,4 +161,5 @@
             }
         ]
     },
+    "cmake.cmakePath": "cmake",
 }
