@@ -1,0 +1,11 @@
+[submodule "third_party/jsoncpp"]
+    path = third_party/jsoncpp
+    url = https://github.com/open-source-parsers/jsoncpp.git
+
+[submodule "third_party/cJSON"]
+    path = third_party/cJSON
+    url = https://github.com/DaveGamble/cJSON.git
+
+[submodule "third_party/openssl"]
+    path = third_party/openssl
+    url = https://github.com/openssl/openssl.git
