@@ -115,7 +115,6 @@
     // ********************** editor ***********************
     // "editor.fontLigatures": "'liga', 'calt'",
     "editor.fontLigatures": true,
-    "editor.fontFamily": "Fira Code,'华文楷体',Hack",
     "editor.fontSize": 16,
     "editor.cursorStyle": "line",
     "editor.lineNumbers": "on",
