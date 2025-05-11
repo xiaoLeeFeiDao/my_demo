@@ -16,38 +16,81 @@
 #define DIVING_PILING_FILENAME_SCUBA_TTS_DOT "scuba_tts_dot.mp3"
 #define DIVING_PILING_FILENAME_SCUBA_TTS_JSON "scuba_tts_json.mp3"
 #define DIVING_PILING_FILEPATH "/home/stone/code/my_demo/dot/"
-void calculateMD5(const char *filename, char *md5sum)
-{
+#define MD5_DIGEST_LENGTH 16  // MD5输出固定16字节
+#define MD5_STRING_LENGTH (MD5_DIGEST_LENGTH * 2 + 1)  // 32字符+null终止符
+
+int calculateMD5(const char *filename, char *md5sum, size_t md5sum_len) {
+    // 验证输出缓冲区大小
+    if (md5sum_len < MD5_STRING_LENGTH) {
+        fprintf(stderr, "Output buffer too small, need at least %d bytes\n", MD5_STRING_LENGTH);
+        return -1;
+    }
+
     FILE *file = fopen(filename, "rb");
     if (!file) {
         perror("Error opening file");
-        exit(EXIT_FAILURE);
+        return -1;
     }
 
-    EVP_MD_CTX *mdContext;
-    const EVP_MD *mdType = EVP_md5();  // 使用MD5算法
+    EVP_MD_CTX *mdContext = EVP_MD_CTX_new();
+    if (!mdContext) {
+        fclose(file);
+        fprintf(stderr, "Failed to create MD context\n");
+        return -1;
+    }
 
-    mdContext = EVP_MD_CTX_new();
-    EVP_DigestInit_ex(mdContext, mdType, NULL);
+    const EVP_MD *mdType = EVP_md5();
+    if (!mdType) {
+        fclose(file);
+        EVP_MD_CTX_free(mdContext);
+        fprintf(stderr, "MD5 not available\n");
+        return -1;
+    }
+
+    if (EVP_DigestInit_ex(mdContext, mdType, NULL) != 1) {
+        fclose(file);
+        EVP_MD_CTX_free(mdContext);
+        fprintf(stderr, "Digest init failed\n");
+        return -1;
+    }
 
     unsigned char data[1024];
     size_t bytesRead;
+    int success = 1;
 
-    while ((bytesRead = fread(data, 1, sizeof(data), file)) != 0) {
-        EVP_DigestUpdate(mdContext, data, bytesRead);
+    while ((bytesRead = fread(data, 1, sizeof(data), file)) ) {
+        if (EVP_DigestUpdate(mdContext, data, bytesRead) != 1) {
+            success = 0;
+            break;
+        }
     }
 
-    unsigned int mdLen;
-    unsigned char mdValue[EVP_MAX_MD_SIZE];
-    EVP_DigestFinal_ex(mdContext, mdValue, &mdLen);
-    fclose(file);
+    if (ferror(file)) {
+        perror("File read error");
+        success = 0;
+    }
 
+    unsigned char mdValue[EVP_MAX_MD_SIZE];
+    unsigned int mdLen;
+    if (success && EVP_DigestFinal_ex(mdContext, mdValue, &mdLen) != 1) {
+        success = 0;
+    }
+
+    fclose(file);
     EVP_MD_CTX_free(mdContext);
 
-    for (unsigned int i = 0; i < mdLen; i++) {
-        snprintf(md5sum + 2 * i, 2, "%02x", mdValue[i]);
+    if (!success) {
+        fprintf(stderr, "MD5 calculation failed\n");
+        return -1;
     }
-    md5sum[MAX_FILENAME_LENGTH - 1] = '\0';
+
+    // 将二进制哈希转换为十六进制字符串
+    for (unsigned int i = 0; i < mdLen; i++) {
+        snprintf(md5sum + 2 * i, 3, "%02x", mdValue[i]);  // 注意缓冲区改为3
+    }
+    md5sum[MD5_STRING_LENGTH - 1] = '\0';  // 确保null终止
+
+    return 0;  // 成功
 }
 
 void copyFile(const char *source, const char *destination)
@@ -90,7 +133,7 @@ void DemoTest04()
         char destinationPath[256];
         snprintf(sourcePath, sizeof(sourcePath), "%s%s", DIVING_PILING_FILEPATH, fileNames[i]);
         char md5sum[MAX_FILENAME_LENGTH];
-        calculateMD5(sourcePath, md5sum);
+        calculateMD5(sourcePath, md5sum, sizeof(md5sum));
         snprintf(destinationPath, sizeof(destinationPath), "%s%s", DIVING_PILING_FILEPATH, md5sum);
         copyFile(sourcePath, destinationPath);
     }

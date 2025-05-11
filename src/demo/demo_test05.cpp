@@ -4,7 +4,7 @@
 #include <string.h>
 #include <stdlib.h>
 #include <dirent.h>
-#include "cJSON.h"
+#include <cjson/cJSON.h>
 // 定义结构体来承载 JSON 数据
 typedef struct {
     char FILE_NAME[256];

@@ -49,7 +49,7 @@ struct FreediveData {
 struct GaugeData {
   CommonData common;
 };
-
+#if 0
 // Function to parse JSON and populate the structure
 void parseJson(const Json::Value &root,
                ScubaRecreationalData &scubaRecreational, FreediveData &freedive,
@@ -166,4 +166,5 @@ void DemoTest07() {
 
   return;
 }
+#endif
 #endif

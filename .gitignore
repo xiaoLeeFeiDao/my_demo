@@ -15,3 +15,7 @@ bin
 .gitignore
 lib
 .cache
+*.so
+*.dll
+*.lib
+*.a
