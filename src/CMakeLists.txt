@@ -18,6 +18,7 @@ file(GLOB_RECURSE SRC_FILES
     "*.hpp"
 )
 
+message(${SRC_FILES})
 # 过滤文件
 foreach(pattern ${EXCLUDE_REGEX})
     list(FILTER SRC_FILES EXCLUDE REGEX "${pattern}")

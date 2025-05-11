@@ -22,5 +22,5 @@ base::~base()
 
 void Test47()
 {
-
+    cout << "test47" << endl;
 }
