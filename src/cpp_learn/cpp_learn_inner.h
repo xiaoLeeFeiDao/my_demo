@@ -5,6 +5,14 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+// C风格声明（证明C的const默认外部链接）
+extern const int a;  // 只需要声明，定义在.c文件中
+
+// C++风格声明（证明C++需要显式extern）
+#ifdef __cplusplus
+extern const int b;  // C++中必须显式extern
+#endif
+
 #define CONFLICT_ERR_DISPALY FALSE
 void Test01();
 void Test02();
